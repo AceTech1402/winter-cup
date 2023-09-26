@@ -1,0 +1,57 @@
+.coming_soon_wrapper {
+  @apply
+  w-full
+  h-[44vh]
+  flex-grow
+  flex
+  flex-col
+  items-start
+  px-[100px]
+  mobile:px-[50px]
+  sm:px-[25px]
+  xs:px-[16px]
+  xs:pt-0
+}
+
+.coming_soon_wrapper .orange_bg1 {
+  background: radial-gradient(45.91% 45.91% at 50% 50%, rgba(60, 185, 255, 0.40) 0%, rgba(29, 32, 31, 0.00) 83.65%);
+  @apply
+  absolute
+  w-[113vw]
+  h-[108vw]
+  z-[-1]
+  bottom-[-302px]
+  left-[-438px]
+  xl:bottom-[200px]
+  md:top-[-116px]
+  md:left-[-276px]
+  md:h-[176vw]
+  md:w-[159vw]
+}
+
+.coming_soon_wrapper .coming_soon {
+    @apply
+    w-full
+    max-w-[1583px]
+    h-full
+    flex
+    flex-col
+    flex-grow
+    items-start
+    justify-center
+}
+
+.coming_soon_wrapper .coming_soon .title h1 {
+  font-size: 6vw;
+  font-weight: 700;
+  @apply
+  sm:text-[35px]
+}
+
+.coming_soon_wrapper .coming_soon .title p {
+  font-size: 24px;
+  font-weight: 500;
+  @apply
+  md:text-[18px]
+  sm:text-[14px]
+}

@@ -1,0 +1,147 @@
+.cover {
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.29) 57.22%);
+    backdrop-filter: blur(10px);
+    transition: .3s;
+    @apply
+    fixed
+    left-0
+    top-0
+    z-30
+    w-full
+    h-full
+    flex
+    items-center
+    justify-center
+    p-[20px]
+    opacity-0
+    invisible
+}
+.cover.active {
+    @apply
+    opacity-100
+    visible
+}
+.popup_wrapper{
+    filter: drop-shadow(6px 6px 15px rgba(0, 0, 0, 0.6));
+    backdrop-filter: blur(60px);
+    border-radius: 12px;
+    @apply
+    fixed
+    w-full
+    max-w-[564px]
+    min-h-[440px]
+    py-[43px]
+    px-[49px]
+    flex
+    items-center
+    justify-between
+    flex-col
+    overflow-hidden
+}
+.popup_wrapper .popup::before {
+    filter: blur(60px);
+    content: "";
+    @apply
+    w-[213.55px]
+    h-[170.53px]
+    bg-[#f0a14db4]
+    absolute
+    right-[43px]
+    bottom-[61px]
+    -z-[2]
+}
+.popup_wrapper .popup {
+    filter: drop-shadow(6px 6px 15px rgba(0, 0, 0, 0.8));
+    backdrop-filter: blur(60px);
+    /* border: 5px solid transparent; */
+    background: linear-gradient(180deg, #2d3a477e 0%, rgba(45, 58, 71, 0) 100%) padding-box;
+            /* linear-gradient(327.72deg, #3D6514 0%, #FFFFFF 99.06%) border-box; */
+    border-radius: 12px;
+    border: 2px solid #3D6514;
+    /* -webkit-mask:
+            linear-gradient(180deg, #2D3A47 0%, rgba(45, 58, 71, 0) 100%) padding-box,
+            linear-gradient(327.72deg, #3D6514 0%, #FFFFFF 99.06%) border-box;
+    -webkit-mask-composite: destination-out; */
+    /* mask-composite: exclude; */
+    @apply
+    w-full
+    absolute
+    left-0
+    top-0
+    h-full
+}
+
+.popup_wrapper .header {
+    @apply
+    w-full
+    flex
+    items-center
+    justify-center
+    relative
+    z-10
+    mb-[53px]
+}
+
+.popup_wrapper .header .image {
+    @apply
+    w-[33px]
+    h-[33px]
+    min-w-[33px]
+    flex
+    items-center
+    justify-center
+    mr-[15px]
+}
+
+.popup_wrapper .header .text {
+    @apply
+    text-[36px]
+    font-[600]
+    leading-[42.19px]
+}
+
+.popup_wrapper .body {
+    @apply
+    w-full
+    h-full
+    flex-grow
+    flex
+    flex-col
+    items-center
+    justify-between
+    relative
+    z-10
+}
+
+.popup_wrapper .body .text {
+    @apply
+    w-full
+    text-[20px]
+    leading-[26px]
+    mb-[30px]
+    text-[#ffffff]
+    text-justify
+}
+
+.popup_wrapper .body .button {
+    @apply
+    w-full
+    py-[12px]
+    px-[20px]
+    rounded-[7px]
+    flex
+    items-center
+    justify-center
+    text-center
+    text-[20px]
+    font-[700]
+    mt-auto
+}
+
+.popup_wrapper .body a.button {
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.7), 11px 11px 35px rgba(255, 234, 0, 0.15);
+    @apply
+    bg-[#FFEA00]
+    text-[#1D201F]
+    /* bg-transparent */
+}

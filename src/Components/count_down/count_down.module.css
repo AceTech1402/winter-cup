@@ -1,0 +1,38 @@
+.counter_items{
+    @apply
+    flex
+    justify-start
+    items-center
+    gap-[27px]
+    mb-[33px]
+}
+
+.counter_items .item {
+    @apply
+    /* mr-[27px] */
+    flex
+    flex-col
+    items-center
+    justify-start
+}
+
+.counter_items .item:last-child {
+    @apply
+    mr-[0]
+}
+
+.counter_items .item .number {
+    @apply
+    text-[36px]
+    text-[#ffffff]
+    font-[400]
+    text-center
+}
+
+.counter_items .item .title {
+    @apply
+    text-[#D9D9D9]
+    font-[300]
+    text-[16px]
+    text-center
+}

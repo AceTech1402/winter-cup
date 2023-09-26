@@ -1,0 +1,33 @@
+.sponsersSection {
+  @apply 
+  flex
+  flex-col
+  gap-[36px]
+  mb-[200px]
+  w-[100%]
+  /* px-[100px]
+  xl:mb-[100px]
+  xl:px-[70px]
+  sm:px-[40px]
+  xs:px-[20px]; */
+}
+
+.sponsersSection > h1 {
+  @apply font-[700]
+  text-[40px]
+  text-[#3CB9FF]
+  /* mb-[40px] */
+  xs:text-[28px];
+}
+
+.sponsersSection > p {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.sponsers {
+  @apply flex
+  justify-between
+  items-center
+  flex-wrap
+}

@@ -1,0 +1,352 @@
+.section_six_wrapper {
+  @apply w-[100%]
+    flex
+    items-start
+    justify-center
+    mb-[200px]
+    /* px-[100px]
+    xl:px-[70px]
+    sm:px-[40px]
+    xs:px-[20px]
+    xs:mb-[100px]; */
+}
+
+.section_six_wrapper .section_six {
+  @apply w-[100%]
+    xxl:max-w-[1689px]
+    flex
+    items-start
+    justify-center
+    /* xl:max-w-[900px] */
+    mobile:max-w-[900px]
+    md:max-w-[700px]
+    sm:max-w-[600px];
+}
+
+.section_six_wrapper .section_six .container {
+  @apply w-[100%]
+    flex
+    flex-col
+    items-start
+    justify-start;
+}
+
+.section_six_wrapper .section_six .container > .title {
+  @apply mb-[40px]
+    /* ml-[25px] */
+    w-[100%]
+    flex
+    items-center
+    justify-start;
+}
+
+.section_six_wrapper .section_six .container .title h1 {
+  @apply text-[#3CB9FF]
+    text-[40px]
+    font-[700]
+    xs:text-[28px];
+}
+
+.section_six_wrapper .section_six .container .items {
+  @apply w-[100%]
+    flex
+    flex-wrap
+    items-start
+    justify-center
+    gap-x-[66px]
+    gap-y-[57px]
+    sm:gap-x-6
+    mb-[57px];
+}
+
+.section_six_wrapper .section_six .container .final_match_wrapper {
+  background: linear-gradient(327.72deg, rgba(60, 185, 255, 1) 0%, rgba(255, 255, 255, 1) 99.06%);
+  @apply mobile:w-[100%%]
+    md:w-full
+    sm:w-full
+    max-w-[100%]
+    p-[2.5px]
+    rounded-[12px]
+    flex
+    items-start
+    justify-center
+    md:mx-0;
+}
+.section_six_wrapper .section_six .container .final_match_layout {
+  @apply /* px-[40px] */
+    w-full;
+}
+.section_six_wrapper .section_six .container .final_match_wrapper .final_match {
+  background: url("./../../../../../assets/pictures/home/sports-platz-img.png");
+  background-size: cover;
+  background-position: 0 80%;
+  background-repeat: no-repeat;
+  @apply px-[40px]
+    py-[20px]
+    rounded-[12px]
+    min-h-[163px]
+    w-full
+    flex
+    flex-col
+    items-start
+    justify-between
+    /* mobile:flex-row */
+    xxl:flex-col
+    relative
+    overflow-hidden
+    xs:items-start
+    gap-y-[21px];
+}
+
+.section_six_wrapper
+  .section_six
+  .container
+  .final_match_wrapper
+  .final_match::before {
+  border-radius: 11px 0px 0px 11px;
+  opacity: 0.9;
+  background: linear-gradient(
+    90deg,
+    #000403 0%,
+    rgba(0, 4, 3, 0.48) 59.27%,
+    rgba(0, 4, 3, 0) 100%
+  );
+  mix-blend-mode: hard-light;
+  content: "";
+  @apply absolute
+    left-0
+    top-0
+    w-full
+    h-full;
+}
+
+.section_six_wrapper
+  .section_six
+  .container
+  .final_match_wrapper
+  .final_match
+  .sportplatz_wrapper {
+  @apply relative
+    flex
+    items-center
+    justify-start
+    z-10
+    flex-grow
+    xs:order-2
+    xs:flex-col
+    xs:w-full
+    xs:items-start;
+}
+.section_six_wrapper
+  .section_six
+  .container
+  .final_match_wrapper
+  .final_match
+  .sportplatz_wrapper
+  .city {
+  @apply font-[600]
+    text-[#ffffff]
+    text-[36px]
+    leading-[42.19px]
+    mr-[15px];
+}
+
+.section_six_wrapper
+  .section_six
+  .container
+  .final_match_wrapper
+  .final_match
+  .sportplatz_wrapper
+  .sportplatz {
+  @apply text-[#ffffff]
+    font-[300]
+    leading-[32.81px]
+    text-[28px]
+    xs:text-[20px];
+}
+
+.section_six_wrapper
+  .section_six
+  .container
+  .final_match_wrapper
+  .final_match
+  .title {
+  @apply flex-grow
+    text-[36px]
+    font-[600]
+    relative
+    z-10
+    text-center
+    mr-[120px]
+    xxl:mr-0
+    xs:order-1;
+}
+
+.section_six_wrapper
+  .section_six
+  .container
+  .final_match_wrapper
+  .final_match
+  .subtitle {
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: -0.028px;
+  @apply relative
+    z-10
+    flex-grow
+    flex-col
+    gap-y-[5px]
+    flex
+    items-center
+    justify-end
+    xs:order-3;
+}
+
+.final_match .date {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  z-index: 10;
+  margin-top: 40px;
+}
+
+.final_match .date > p {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.section_six_wrapper
+  .section_six
+  .container
+  .final_match_wrapper
+  .final_match
+  .date_wrapper
+  .date,
+.section_six_wrapper
+  .section_six
+  .container
+  .final_match_wrapper
+  .final_match
+  .date_wrapper
+  .time {
+  @apply flex
+    items-center
+    justify-start;
+}
+.section_six_wrapper
+  .section_six
+  .container
+  .final_match_wrapper
+  .final_match
+  .date_wrapper
+  .icon {
+  @apply w-[35px]
+    h-[35px]
+    flex
+    items-center
+    justify-center
+    mr-[8px];
+}
+
+.section_six_wrapper
+  .section_six
+  .container
+  .final_match_wrapper
+  .final_match
+  .date_wrapper
+  .icon
+  img {
+  @apply w-full
+    h-full;
+}
+
+.section_six_wrapper
+  .section_six
+  .container
+  .final_match_wrapper
+  .final_match
+  .date_wrapper
+  .text {
+  @apply text-[#ffffff]
+    text-[36px]
+    font-[700]
+    leading-[42.19px]
+    flex
+    flex-col
+    items-start;
+}
+.section_six_wrapper
+  .section_six
+  .container
+  .final_match_wrapper
+  .final_match
+  .date_wrapper
+  .text
+  .time {
+  @apply font-medium
+    leading-[37px]
+    text-[20px]
+    ml-auto;
+}
+@media screen and (max-width: 640px) {
+  .section_six_wrapper {
+    @apply mb-[100px];
+  }
+  .section_six_wrapper .section_six .container .items {
+    @apply w-[100%]
+        overflow-y-auto
+        flex-nowrap
+        justify-start;
+  }
+  .section_six_wrapper .section_six .container .items::-webkit-scrollbar {
+    display: none;
+  }
+  .section_six_wrapper .section_six .container .final_match_wrapper {
+    @apply w-full;
+  }
+  .section_six_wrapper .section_six .container .final_match_layout {
+    @apply p-0;
+  }
+  .section_six_wrapper
+    .section_six
+    .container
+    .final_match_wrapper
+    .final_match {
+    @apply flex-col
+        px-[20px];
+  }
+  /* .section_six_wrapper .section_six .container .final_match_wrapper .final_match .sportplatz_wrapper .city{
+        @apply
+        text-[20px]
+    } */
+  /* .section_six_wrapper .section_six .container .final_match_wrapper .final_match .sportplatz_wrapper .sportplatz {
+        @apply
+        text-[18px]
+    } */
+
+  /* .section_six_wrapper .section_six .container .final_match_wrapper .final_match .title {
+        @apply
+        text-[26px]
+    } */
+  .section_six_wrapper
+    .section_six
+    .container
+    .final_match_wrapper
+    .final_match
+    .date_wrapper
+    .icon {
+    @apply w-[24px]
+        h-[24px];
+  }
+  .section_six_wrapper
+    .section_six
+    .container
+    .final_match_wrapper
+    .final_match
+    .date_wrapper
+    .text {
+    @apply text-[20px];
+  }
+}

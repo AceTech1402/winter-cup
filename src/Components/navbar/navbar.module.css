@@ -1,0 +1,309 @@
+.navbar_wrapper {
+    @apply
+    w-full
+    flex
+    justify-center
+    items-start
+    relative
+    z-20
+    px-[100px]
+    mobile:px-[50px]
+    sm:px-[25px]
+    xs:px-[16px]
+    xs:pt-0
+}
+
+.cover {
+    background: linear-gradient(180deg, #151636 0%, rgba(0, 0, 0, 0.02) 57.22%);
+    backdrop-filter: blur(10px);
+    @apply
+    fixed
+    w-full
+    h-full
+    top-0
+    left-0
+    z-[9]
+    duration-[0.5s]
+    opacity-0
+    invisible
+}
+.cover.active {
+    @apply
+    opacity-100
+    visible
+}
+.navbar {
+    @apply
+    w-full
+    flex
+    justify-between
+    items-center
+    /* max-w-[1583px] */
+}
+.navbar .button_open_menu {
+    @apply
+    hidden
+    mobile:flex
+    w-[24px]
+    h-[24px]
+    min-w-[24px]
+    items-center
+    justify-between
+    flex-col
+    cursor-pointer
+    ml-auto
+    z-[1]
+}
+
+.navbar .button_open_menu .image {
+    @apply
+    w-[24px]
+    h-[24px]
+    flex
+    items-center
+    justify-center
+}
+
+.navbar .button_open_menu .image img {
+    @apply
+    max-w-full
+    max-h-full
+    object-contain
+}
+
+.navbar .logo {
+    @apply
+    flex
+    items-center
+    justify-center
+    mr-[54px]
+}
+
+.navbar .logo .image {
+    @apply
+    w-[51px]
+    h-[58px]
+    sm:w-[42px]
+}
+
+.navbar .logo .image img {
+    @apply
+    max-w-full
+    max-h-full
+    object-contain
+}
+
+.navbar .logo .text {
+    @apply
+    w-[83px]
+    sm:w-[43px]
+}
+.navbar .logo .text img {
+    @apply
+    max-w-full
+    max-h-full
+    object-contain
+}
+.navbar .list_nav .nav_mobile_header {
+    @apply
+    w-full
+    hidden
+    items-center
+    justify-between
+    mobile:mb-[80px]
+    mobile:flex
+}
+.navbar .list_nav {
+    box-shadow: 0 0 0 0;
+    @apply
+    relative
+    flex
+    items-center
+    justify-between
+    w-full
+    mobile:w-[288px]
+    mobile:h-screen
+    mobile:fixed
+    mobile:left-[-300px]
+    mobile:top-0
+    mobile:z-10
+    mobile:flex-col
+    mobile:items-start
+    mobile:justify-start
+    mobile:p-[20px]
+    mobile:duration-[0.5s]
+}
+.navbar .list_nav .button_close {
+    @apply
+    hidden
+    mobile:flex
+    items-center
+    justify-center
+    w-[24px]
+    h-[24px]
+    min-w-[24px]
+    border-[1px]
+    border-white
+    rounded-[8px]
+}
+
+.navbar .list_nav.active {
+    box-shadow: 0 0 10px 0 #000;
+    @apply
+    left-0
+}
+
+.navbar .list_nav .button_close::before,
+.navbar .list_nav .button_close::after {
+    content: "";
+    @apply
+    bg-white
+    cursor-pointer
+    rounded-[12px]
+    w-[2px]
+    h-[20px]
+    absolute
+}
+
+.navbar .list_nav .button_close::before {
+    transform: rotate(45deg);
+}
+.navbar .list_nav .button_close::after {
+    transform: rotate(-45deg);
+}
+
+.navbar .list_nav:hover .mark {
+    @apply
+    opacity-100
+}
+.navbar .list_nav .mark {
+    @apply
+    w-[15px]
+    h-[3px]
+    bg-primary-gold
+    absolute
+    left-0
+    top-[100%]
+    rounded-[10px]
+    opacity-0
+    duration-[0.3s]
+    mobile:hidden
+    
+}
+.navbar .list_nav .mark.active {
+    @apply
+    opacity-100
+}
+.navbar ul {
+    @apply
+    flex
+    items-center
+    justify-start
+    relative
+    mobile:flex-col
+    mobile:w-full
+    mobile:items-start
+    mobile:mb-[20px]
+    mobile:gap-y-[25px]
+}
+
+.navbar ul:hover .mark{
+    @apply
+    opacity-100
+}
+.navbar ul li {
+    @apply
+    mr-[80px]
+    /* w-[81px] */
+    text-[20px]
+    xl:text-[16px]
+    font-[400]
+    leading-[23.44px]
+    mobile:mr-0
+    mobile:mb-[20px]
+}
+
+.navbar ul li:last-child {
+    @apply
+    mr-0
+}
+.navbar ul li a {
+    @apply
+    text-white
+    flex
+    items-center
+    justify-start
+}
+
+.navbar ul li a .image {
+    @apply
+    w-[24px]
+    h-[24px]
+    items-center
+    justify-center
+    mr-[15px]
+    hidden
+    mobile:flex
+}
+
+.navbar ul li a .image svg {
+    @apply
+    max-w-full
+    max-h-full
+    object-contain
+}
+
+.navbar ul li a .image svg path {
+    stroke: #fff;
+}
+.navbar ul li a.active .image svg path {
+    @apply
+    stroke-primary-gold
+}
+.navbar ul li a.active {
+    @apply
+    text-primary-gold
+}
+
+.navbar .button {
+    @apply
+    hidden
+    ml-[20px]
+    mobile:ml-0
+    /* mobile:mt-auto */
+    mobile:w-full
+}
+
+.navbar .button a {
+    box-shadow: 11px 11px 35px 0px rgba(255, 203, 0, 0.20), 3px 4px 5px 0px rgba(0, 0, 0, 0.60);
+    @apply
+    w-full
+    py-[10px]
+    px-[20px]
+    whitespace-nowrap
+    border-[1px]
+    border-[#FFEA00]
+    text-[#FFEA00]
+    text-[18px]
+    font-[700]
+    leading-[21.09px]
+    flex
+    items-center
+    justify-center
+    h-[41px]
+    pt-[12px]
+    rounded-[10px]
+}
+
+@media screen and (max-width: 1023px) {
+    .navbar .list_nav{
+        background: linear-gradient(180deg, #2D3A47 0%, rgba(45, 58, 71, 0) 100%);
+        filter: drop-shadow(6px 6px 15px rgba(0, 0, 0, 0.6));
+        backdrop-filter: blur(60px);
+        @apply
+        border-white
+        rounded-[12px]
+        overflow-hidden
+        border-[1px]
+    }
+}

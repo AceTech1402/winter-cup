@@ -1,0 +1,90 @@
+.section_five_wrapper {
+    @apply
+    w-[100%]
+    flex
+    items-start
+    justify-center
+    mb-[200px]
+    /* px-[100px]
+    xl:px-[70px]
+    sm:px-[40px]
+    xs:px-[20px]
+    xs:mb-[100px] */
+}
+
+.section_five_wrapper .section_five {
+    @apply
+    w-[100%]
+    xxl:max-w-[1649px]
+    flex
+    items-start
+    justify-center
+    /* xl:max-w-[900px] */
+    mobile:max-w-[900px]
+    md:max-w-[700px]
+    sm:max-w-[600px]
+}
+
+.section_five_wrapper .section_five .container {
+    @apply
+    w-[100%]
+    flex
+    flex-col
+    items-start
+    justify-start
+}
+.section_five_wrapper .section_five .container .title {
+    @apply
+    mb-[40px]
+    w-[100%]
+    ml-[5px]
+    flex
+    items-center
+    justify-start
+}
+
+.section_five_wrapper .section_five .container .title h1 {
+    @apply
+    text-[#3CB9FF]
+    text-[40px]
+    font-[700]
+    xs:text-[24px]
+}
+
+.section_five_wrapper .section_five .container .items {
+    column-gap: calc(100% - (737px * 2));
+    @apply
+    flex
+    items-start
+    flex-wrap
+    justify-center
+    gap-y-[40px]
+    xxl:gap-x-[20px]
+    w-full
+}
+@media screen and (max-width: 1570px) {
+    .section_five_wrapper .section_five .container .items {
+        column-gap: calc(100% - (630px * 2));
+    }
+}
+@media screen and (max-width: 640px) {
+    .section_five_wrapper {
+        @apply
+        mb-[100px]
+    }
+    .section_five_wrapper .section_five .container{
+        @apply
+        py-0
+    }
+    .section_five_wrapper .section_five .container .items {
+        @apply
+        w-[100%]
+        flex
+        flex-nowrap
+        overflow-x-auto
+        justify-start
+    }
+    .section_five_wrapper .section_five .container .items::-webkit-scrollbar {
+        display: none;
+    }
+}

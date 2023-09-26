@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./assets/css/font-faces/roboto.css";
+
+* {
+  box-sizing: border-box;
+}
+
+.dropdown-container {
+  position: relative;
+}
+
+body {
+  @apply
+  font-[roboto]
+  text-white
+}
+
+.dropdown-header {
+  @apply /* min-w-[90px] */
+  h-[54px]
+  cursor-pointer
+  font-semibold
+  text-[18px]
+  text-p-dark-text
+  flex
+  items-center
+  mx-8
+  px-2
+  whitespace-nowrap
+  mobile:text-[12px]
+  mobile:h-[30px]
+  mobile:mx-[1%]
+  mobile:px-1;
+}
+
+.dropdown-header-text {
+  font-size: 16px;
+  @apply h-[54px]
+  font-semibold
+  text-[18px]
+  text-p-dark-text
+  flex
+  items-center
+  justify-center
+  mx-8
+  px-2
+  whitespace-nowrap
+  mobile:text-[12px]
+  mobile:h-[30px]
+  mobile:mx-[1%]
+  mobile:px-1;
+}
+
+.dropdown-arrow {
+  width: 0;
+  height: 0;
+  /* margin-left: 10px; */
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  border-color: #999 transparent transparent transparent;
+  transition: transform 0.2s ease-in-out;
+}
+
+.dropdown-arrow.open {
+  transform: rotate(180deg);
+}
+
+.dropdown-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  box-shadow: inset -6px -6px 6px rgba(255, 255, 255, 0.1),
+    inset 6px 6px 7px rgba(0, 0, 0, 0.34);
+  border-radius: 27px;
+  @apply /* h-[54px] */
+  font-semibold
+  text-[18px]
+  text-white
+  flex
+  flex-col
+  items-center
+  /* w-[99px] */
+  /* mx-8 */
+  bg-p-dark-1
+  px-6
+  /* whitespace-nowrap */
+  mobile:text-[12px]
+  /* mobile:h-[30px] */
+  mobile:text-center
+  mobile:mx-[1%]
+  mobile:rounded-[15px]
+  mobile:px-2;
+}
+
+.dropdown-option {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-option:hover {
+  @apply text-p-yellow-1;
+}
+
+.smallCard {
+  background: #1d201f;
+  box-shadow: -6px -6px 12px rgba(255, 255, 255, 0.05),
+    6px 6px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.largCard {
+  background: #1d201f;
+  box-shadow: -6px -6px 12px rgba(255, 255, 255, 0.05),
+    6px 6px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+}
+
+.PrimInput {
+  box-shadow: -6px -6px 12px rgba(255, 255, 255, 0.05),
+    6px 6px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  font-size: 18px;
+  background-color: rgb(29 32 31 / var(--tw-bg-opacity));
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  height: 64px;
+  width: 100%;
+}
+
+html {
+  @apply
+  scroll-smooth
+}

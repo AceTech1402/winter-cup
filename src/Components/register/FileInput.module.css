@@ -1,0 +1,23 @@
+.uploadBox {
+  cursor: pointer;
+}
+
+.importFileContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.importFileContainer img {
+  border-radius: 5px;
+}
+
+.imgContainer {
+  @apply
+  flex justify-center items-center h-full w-full relative
+}
+
+.imgContainer > .changeBtn {
+  @apply
+  opacity-50 bg-black py-1 px-3 rounded-lg absolute text-white
+}

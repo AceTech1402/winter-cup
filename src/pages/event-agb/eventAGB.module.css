@@ -1,0 +1,79 @@
+.event_agb_wrapper {
+    @apply
+    w-full
+    px-[80px]
+    sm:px-[40px]
+    xs:px-[20px]
+    flex
+    justify-center
+    items-start
+    mt-[50px]
+    mb-[150px]
+}
+
+.event_agb_wrapper .event_agb {
+    @apply
+    w-full
+    max-w-[1583px]
+}
+
+.event_agb_wrapper .event_agb .container {
+    @apply
+    w-full
+    flex
+    flex-col
+    items-start
+    justify-start
+}
+
+.event_agb_wrapper .event_agb .container .title {
+    @apply
+    w-full
+    mb-[40px]
+}
+
+.event_agb_wrapper .event_agb .container .title h1 {
+    @apply
+    font-bold
+    text-[40px]
+    text-primary-gold
+    leading-[47px]
+    sm:text-[28px]
+    sm:leading-[32px]
+}
+
+.event_agb_wrapper .event_agb .container .explain {
+    @apply
+    w-full
+    flex
+    flex-col
+    items-start
+    justify-start
+    gap-y-[24px]
+}
+
+.event_agb_wrapper .event_agb .container .explain p,
+.event_agb_wrapper .event_agb .container .explain h2 {
+    @apply
+    w-full
+    text-left
+    text-white
+}
+
+.event_agb_wrapper .event_agb .container .explain p {
+    @apply
+    text-[20px]
+    font-normal
+    text-justify
+    sm:text-[16px]
+    sm:leading-[26px]
+}
+.event_agb_wrapper .event_agb .container .explain h2 {
+    @apply
+    text-[26px]
+    font-normal
+    leading-[32px]
+    text-justify
+    sm:text-[20px]
+    sm:leading-[26px]
+}

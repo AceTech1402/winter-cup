@@ -1,0 +1,572 @@
+.register_layout {
+  @apply w-[100%]
+    min-h-[100vh]
+    flex
+    items-start
+    justify-center
+    overflow-x-clip
+    xl:items-center
+    xl:justify-start
+    relative
+    pt-[50px]
+    pl-[150px]
+    z-10
+    xl:px-[100px]
+    sm:px-[40px]
+    xs:px-[20px]
+    xs:mb-[100px];
+}
+
+.register_layout .register_wrapper {
+  @apply w-[100%]
+    max-w-[1649px]
+    xl:max-w-[none]
+    mobile:max-w-[none]
+    md:max-w-[none]
+    sm:max-w-[none];
+}
+
+.register_wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.register_wrapper .register {
+  @apply w-[100%]
+    flex;
+}
+
+.register_wrapper .register .container {
+  @apply flex
+    w-full
+    items-start
+    justify-between
+    flex-row
+    mobile:flex-col-reverse
+    mobile:items-center
+    mobile:justify-start;
+}
+
+.register_wrapper .register .container .items_left {
+  @apply flex-col
+    items-start
+    justify-start
+    w-[865px]
+    xl:mr-0
+    xl:w-[auto]
+    mobile:mr-0
+    mobile:w-[auto]
+    md:mr-0
+    md:w-[auto]
+    sm:mr-0
+    sm:w-[auto]
+    max-w-[865px];
+}
+
+.register_wrapper .register .container .items_left .title {
+  @apply flex
+    items-end
+    justify-start
+    mb-[14px];
+}
+
+.register_wrapper .register .container .items_left .title .logo {
+  @apply w-[5vw]
+    h-[auto]
+    flex
+    mr-[19px];
+}
+
+.register_wrapper .register .container .items_left .title .logo img {
+  @apply max-w-[100%]
+    max-h-[100%]
+    object-contain;
+}
+
+.register_wrapper .register .container .items_left .title .text {
+  @apply text-[#ffffff];
+}
+
+.register_wrapper .register .container .items_left .title .text > h1 {
+  @apply font-[700]
+  text-[5vw]
+  whitespace-nowrap
+  leading-[3.8vw];
+}
+
+.register_wrapper .register .container .items_left .explain {
+  @apply mb-[27px];
+}
+
+.register_wrapper .register .container .items_left .explain p {
+  @apply text-[1.9vw]
+    font-[400]
+    text-[#ffffff]
+    xl:text-[26px]
+    mobile:text-[26px]
+    md:text-[24px]
+    md:leading-[31.48px]
+    sm:text-[24px]
+    sm:leading-[31.48px];
+}
+
+.register_wrapper .register .container .items_left .bottom_explain {
+  @apply mb-[20px]
+    text-[24px];
+}
+
+.register_wrapper .register .container .items_left .image {
+  @apply mb-[69px]
+    w-[100%]
+    max-w-[358px]
+    xs:max-w-[100%];
+}
+
+.register_wrapper .register .container .items_left .image img {
+  @apply max-w-full
+    max-h-full
+    object-contain;
+}
+
+.register_wrapper .register .container .items_left .register_wrapper {
+  @apply flex
+    flex-col
+    md:items-start
+    justify-start
+    mb-[138px]
+    sm:items-center;
+}
+
+.register_wrapper .register .container .items_left .register_wrapper .title {
+  @apply text-[#FFEA00]
+    mb-[31px]
+    font-[600]
+    text-[36px]
+    text-center;
+}
+
+.register_wrapper
+  .register
+  .container
+  .items_left
+  .register_wrapper
+  .button_show_register {
+  @apply w-[100%]
+    flex
+    justify-start
+    items-center
+    mt-[10px];
+}
+
+.register_wrapper .register .container .items_left .register_wrapper form {
+  @apply w-[100%]
+    max-w-[529px]
+    flex
+    flex-wrap
+    justify-between
+    relative
+    gap-y-[20px]
+    z-[2];
+}
+
+.register_wrapper
+  .register
+  .container
+  .items_left
+  .register_wrapper
+  .button_show_register
+  .button_back {
+  @apply w-[48px]
+    min-w-[48px]
+    h-[48px]
+    mr-[15px]
+    border-[1.5px]
+    rounded-[7px]
+    border-[#FFEA00]
+    flex
+    items-center
+    justify-center;
+}
+
+.register_wrapper
+  .register
+  .container
+  .items_left
+  .register_wrapper
+  .button_show_register
+  .button_back
+  .image {
+  @apply w-[24px]
+    h-[24px]
+    flex
+    items-center
+    justify-center
+    mb-0;
+}
+
+.register_wrapper
+  .register
+  .container
+  .items_left
+  .register_wrapper
+  .button_show_register
+  .button_back
+  .image
+  svg {
+  @apply max-w-full
+    max-h-full
+    object-contain;
+}
+
+.register_wrapper
+  .register
+  .container
+  .items_left
+  .register_wrapper
+  .button_show_register
+  .button {
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.6),
+    11px 11px 35px rgba(255, 234, 0, 0.15);
+  @apply font-[inherit]
+    w-[100%]
+    cursor-pointer
+    px-[10px]
+    py-[5px]
+    h-[48px]
+    rounded-[10px]
+    bg-[#FFEA00]
+    text-[#1D201F]
+    text-[20px]
+    font-[700]
+    outline-none
+    flex
+    items-center
+    justify-center;
+}
+
+.register_wrapper
+  .register
+  .container
+  .items_left
+  .register_wrapper
+  .button_show_register
+  .button
+  .image {
+  animation-name: sending;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  @apply w-[24px]
+    h-[24px]
+    min-w-[24px]
+    flex
+    items-center
+    justify-center
+    mb-0
+    mr-[10px];
+}
+
+@keyframes sending {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.register_wrapper
+  .register
+  .container
+  .items_left
+  .register_wrapper
+  .button_show_register
+  .button
+  .image
+  img {
+  @apply max-w-full
+  max-h-full
+  object-contain;
+}
+
+.register_wrapper
+  .register
+  .container
+  .items_left
+  .register_wrapper
+  .button_show_register
+  .button:disabled {
+  @apply opacity-80
+  cursor-not-allowed;
+}
+
+.register_wrapper .register .container .items_right {
+  @apply flex
+  items-center
+  justify-center;
+}
+
+.register_wrapper .register .container .items_right .image {
+  @apply w-[50vw]
+  flex
+  items-center
+  justify-center
+  relative
+  xs:w-[100vw]
+  xs:mb-[40px];
+}
+
+.register_wrapper .register .container .items_right .image img {
+  @apply max-w-[100%]
+  max-h-[100%]
+  object-contain;
+}
+
+.register_wrapper .orange_bg1 {
+  background: radial-gradient(45.91% 45.91% at 50% 50%, rgba(60, 185, 255, 0.40) 0%, rgba(29, 32, 31, 0.00) 83.65%);
+  @apply absolute
+  w-[2218px]
+  h-[2218px]
+  z-[-1]
+  top-[-33%]
+  left-[20%]
+  xl:left-[6%]
+  xl:top-[-2%]
+  xl:w-[1400px]
+  xl:h-[1400px]
+  mobile:left-[6%]
+  mobile:top-[-2%]
+  mobile:w-[1400px]
+  mobile:h-[1400px]
+  md:left-[-7%]
+  md:top-[0%]
+  md:w-[1000px]
+  md:h-[1000px]
+  sm:left-[-18%]
+  sm:top-[0%]
+  sm:w-[898px]
+  sm:h-[898px];
+}
+
+@media screen and (max-width: 640px) {
+  .register_wrapper {
+    @apply mb-[100px];
+  }
+  .register_wrapper .register .container .items_right .image {
+    @apply mb-[10px]
+    w-[100%]
+    max-w-[400px];
+  }
+  .register_wrapper .register {
+    @apply max-w-[none];
+  }
+  .register_wrapper .register .container {
+    @apply flex-col-reverse
+    items-center
+    justify-start;
+  }
+
+  .register_wrapper .register .container .items_left .items {
+    @apply flex-col
+        items-center;
+  }
+
+  .register_wrapper .register .container .items_left .register_wrapper form {
+    @apply flex-col;
+  }
+
+  .register_wrapper .register .container .items_left {
+    @apply mr-0
+    w-[auto];
+  }
+  .register_wrapper .register .container .items_left .title .logo {
+    @apply w-[57px];
+  }
+  .register_wrapper .register .container .items_left .title .text > h1 {
+    @apply text-[40px];
+  }
+  .register_wrapper .register .container .items_left .explain p {
+    @apply leading-[31.48px]
+    text-[24px];
+  }
+  .register_wrapper .register .container .items_left .image {
+    @apply md:mb-[20px];
+  }
+}
+
+/* input */
+.input_layout {
+  @apply w-full
+  flex
+  items-start
+  justify-start
+  gap-x-[20px]
+  sm:flex-col
+  sm:gap-y-[20px];
+}
+
+.input_wrapper {
+  @apply w-[100%] flex items-start justify-start;
+}
+
+.input_wrapper:nth-child(even) {
+  @apply mr-0;
+}
+
+.input_wrapper label {
+  @apply w-[100%] flex flex-col items-start justify-start;
+}
+
+.input_wrapper label span {
+  @apply w-[100%] flex items-center justify-start pl-[5px] text-[16px] text-[#ffffff] font-[400] mb-[10px] leading-[18.75px];
+}
+
+.input_wrapper label .error {
+  @apply text-[12px]
+    ml-[5px]
+    mb-0
+    text-[#FA0000];
+}
+
+.input_wrapper label .input {
+  transition: 0.3s;
+  background: linear-gradient(327.72deg, rgba(60, 185, 255, 1) 0%, rgba(255, 255, 255, 1) 99.06%);
+
+  @apply w-[100%] flex justify-start items-center relative rounded-[5px] z-[1];
+}
+
+.input_wrapper label .input::before {
+  content: "";
+  background: linear-gradient(135deg, #2d3a47 40%, rgba(45, 58, 71, 0.6) 100%);
+  filter: drop-shadow(0px 1px 7px rgba(21, 21, 95, 0.1));
+  backdrop-filter: blur(60.5px);
+  width: calc(100% - 2px);
+  height: calc(100% - 2.5px);
+  left: 1px;
+  @apply absolute rounded-[5px] -z-[1];
+}
+
+.input_wrapper label .input.active {
+  background: #3CB9FF;
+}
+
+.input_wrapper label .input.error {
+  background: #fa0000;
+}
+
+.input_wrapper label .input input {
+  font-family: inherit;
+  @apply w-[100%] p-[10px] h-[35px] bg-transparent outline-none text-[#ffffff] text-[12px] font-[300];
+}
+
+.input_wrapper label .input select {
+  font-family: inherit;
+  @apply w-[100%] p-[10px] h-[35px] bg-transparent outline-none text-[#ffffff] text-[12px] font-[300];
+}
+
+.input_wrapper label .input select option {
+  @apply text-p-dark-1
+    my-[4px];
+}
+
+.input_wrapper label .input input::-webkit-inner-spin-button {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  .input_wrapper {
+    @apply max-w-[none]
+    mr-[0];
+  }
+}
+
+.importFileContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.uploadBox {
+  cursor: pointer;
+}
+
+.checkbox_layout {
+  @apply w-full
+    flex
+    items-start
+    justify-start
+    flex-col
+    mb-5;
+}
+
+.error {
+  @apply text-[12px]
+    mt-[5px]
+    mb-0
+    text-[#FA0000];
+}
+
+.checkbox_layout .checkbox_wrapper {
+  @apply flex
+    items-start
+    justify-start
+    relative;
+}
+
+.checkbox_layout .checkbox_wrapper > input {
+  @apply absolute
+    left-0
+    top-0
+    opacity-0
+    z-[1]
+    cursor-pointer
+    w-full
+    h-full;
+}
+
+.checkbox_layout .checkbox_wrapper .checkbox {
+  @apply w-[23px]
+    min-w-[23px]
+    h-[23px]
+    rounded-md
+    mr-4
+    flex
+    items-center
+    justify-center
+    mt-[-4px]
+    border-white
+    border-[1px]
+    relative;
+}
+
+.checkbox_layout .checkbox_wrapper .checkbox::before {
+  background: url("./../../../icons/yellow-tick.svg") round;
+  background-size: cover;
+  content: "";
+  @apply absolute
+    w-[14px]
+    h-[10px]
+    opacity-0
+    duration-100
+    bg-no-repeat;
+}
+
+.checkbox_layout .checkbox_wrapper > input:checked ~ .checkbox::before {
+  @apply opacity-100;
+}
+
+.checkbox_layout .checkbox_wrapper .text {
+  @apply flex;
+}
+
+.checkbox_layout .checkbox_wrapper .text p {
+  @apply font-medium
+    text-white
+    text-xs;
+}
+
+.checkbox_layout .checkbox_wrapper .text p a {
+  @apply text-light-blue
+    relative
+    z-10
+    ml-[4px];
+}

@@ -1,0 +1,321 @@
+.register_section_wrapper {
+    @apply
+    w-[100%]
+    flex
+    items-start
+    justify-center
+    mb-[200px]
+    px-[40px]
+    xs:mb-[100px]
+}
+
+.register_section_wrapper .register_section {
+    @apply
+    w-[100%]
+    xxl:max-w-[1649px]
+    flex
+    items-start
+    justify-center
+    xl:max-w-[900px]
+    mobile:max-w-[900px]
+    md:max-w-[700px]
+    sm:max-w-[600px]
+}
+
+.register_section_wrapper .register_section .container {
+    @apply
+    w-[100%]
+    flex
+    flex-col
+    items-center
+    justify-start
+}
+
+form {
+    @apply
+    w-[100%]
+    max-w-[529px]
+    flex
+    flex-wrap
+    justify-between
+    relative
+    z-[2]
+}
+.button_show_register .button_back {
+    @apply
+    w-[48px]
+    min-w-[48px]
+    h-[48px]
+    mr-[15px]
+    border-[1.5px]
+    rounded-[7px]
+    border-[#FFEA00]
+    flex
+    items-center
+    justify-center
+}
+.button_show_register .button_back .image {
+    @apply
+    w-[24px]
+    h-[24px]
+    flex
+    items-center
+    justify-center
+    mb-0
+}
+
+.button_show_register .button_back .image svg {
+    @apply
+    max-w-full
+    max-h-full
+    object-contain
+}
+.button_show_register .button {
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.6), 11px 11px 35px rgba(255, 234, 0, 0.15);
+    @apply
+    font-[inherit]
+    w-[100%]
+    cursor-pointer
+    px-[10px]
+    py-[5px]
+    h-[48px]
+    rounded-[10px]
+    bg-[#FFEA00]
+    text-[#1D201F]
+    text-[20px]
+    font-[700]
+    outline-none
+    flex
+    items-center
+    justify-center
+}
+.button_show_register .button .image {
+    animation-name: sending;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    @apply
+    w-[24px]
+    h-[24px]
+    min-w-[24px]
+    flex
+    items-center
+    justify-center
+    mb-0
+    mr-[10px]
+}
+
+@keyframes sending {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.button_show_register .button .image img {
+    @apply
+    max-w-full
+    max-h-full
+    object-contain
+}
+.button_show_register .button:disabled {
+    @apply
+    opacity-80
+    cursor-not-allowed
+}
+
+.register_wrapper .register .container .items_right {
+    @apply
+    flex
+    items-center
+    justify-center
+}
+
+.register_wrapper .register .container .items_right .image {
+    @apply
+    w-full
+    max-w-[964px]
+    xl:w-[auto]
+    mobile:w-[auto]
+    md:w-[auto]
+    sm:w-[auto]
+    flex
+    items-center
+    justify-center
+    relative
+    z-[1]
+    xl:mb-[20px]
+    mobile:mb-[20px]
+    md:mb-[10px]
+    sm:mb-[10px]
+}
+
+/* .register_wrapper .register .container .items_right .image::before {
+    content: "";
+    background: radial-gradient(39% 39% at 50% 50%, rgba(240, 160, 77, 0.4) 0%, rgba(29, 32, 31, 0) 83.65%);
+    @apply
+    absolute
+    w-[2218px]
+    h-[2218px]
+    z-[-1]
+    top-[-50%]
+    left-[-50%]
+} */
+
+.register_wrapper .register .container .items_right .image img {
+    @apply
+    max-w-[100%]
+    max-h-[100%]
+    object-contain
+}
+
+.register_wrapper .orange_bg1 {
+    background: radial-gradient(39% 39% at 50% 50%, rgba(240, 160, 77, 0.4) 0%, rgba(29, 32, 31, 0) 83.65%);
+    @apply
+    absolute
+    w-[2218px]
+    h-[2218px]
+    z-[-1]
+    top-[-4%]
+    left-[22%]
+    xl:left-[6%]
+    xl:top-[-2%]
+    xl:w-[1400px]
+    xl:h-[1400px]
+    mobile:left-[6%]
+    mobile:top-[-2%]
+    mobile:w-[1400px]
+    mobile:h-[1400px]
+    md:left-[-7%]
+    md:top-[0%]
+    md:w-[1000px]
+    md:h-[1000px]
+    sm:left-[-18%]
+    sm:top-[0%]
+    sm:w-[898px]
+    sm:h-[898px]
+}
+
+
+@media screen and (max-width: 640px) {
+    .register_wrapper {
+        @apply
+        mb-[100px]
+    }
+    .register_wrapper .register .container .items_right .image{
+        @apply
+        mb-[10px]
+        w-[100%]
+        max-w-[400px]
+    }
+    .register_wrapper .register {
+        @apply
+        max-w-[none]
+    }
+    .register_wrapper .register .container {
+        @apply
+        flex-col-reverse
+        items-center
+        justify-start
+    }
+
+    .register_wrapper .register .container .items_left .items {
+        @apply
+        flex-col
+        items-center
+    }
+
+    form {
+        @apply
+        flex-col
+    }
+
+    .register_wrapper .register .container .items_left {
+        @apply
+        mr-0
+        w-[auto]
+    }
+    .register_wrapper .register .container .items_left .title .logo {
+        @apply
+        w-[57px]
+    }
+    .register_wrapper .register .container .items_left .title .text > h1 {
+        @apply
+        text-[40px]
+    }
+    .register_wrapper .register .container .items_left .explain p {
+        @apply
+        leading-[31.48px]
+        text-[24px]
+    }
+    .register_wrapper .register .container .items_left .image {
+        @apply
+        md:mb-[20px]
+        max-w-[150px]
+    }
+}
+
+/* input */
+.input_wrapper {
+    @apply w-[100%] max-w-[251px] mb-[20px] mr-[27px] flex items-start justify-start
+}
+
+.input_wrapper:nth-child(even) {
+    @apply mr-0
+}
+
+.input_wrapper label {
+    @apply w-[100%] flex flex-col items-start justify-start
+}
+
+.input_wrapper label span {
+    @apply w-[100%] flex items-center justify-start pl-[5px] text-[16px] text-[#ffffff] font-[400] mb-[10px] leading-[18.75px]
+}
+.input_wrapper label .error {
+    @apply
+    text-[12px]
+    ml-[5px]
+    text-[#FA0000]
+}
+.input_wrapper label .input {
+    transition: .3s;
+    background: linear-gradient(92.17deg, #FFFFFF 56.58%, #3D6514 89.96%);
+
+    @apply w-[100%] flex justify-start items-center relative rounded-[5px] z-[1]
+}
+
+.input_wrapper label .input::before {
+    content: "";
+    background: linear-gradient(135deg, #2D3A47 40%, rgba(45, 58, 71, 0.6) 100%);
+    filter: drop-shadow(0px 1px 7px rgba(21, 21, 95, .1));
+    backdrop-filter: blur(60.5px);
+    width: calc(100% - 2px);
+    height: calc(100% - 2.5px);
+    left: 1px;
+    @apply absolute rounded-[5px] -z-[1]
+}
+
+.input_wrapper label .input.active {
+    background: #FFEA00;
+}
+.input_wrapper label .input.error {
+    background: #FA0000;
+}
+.input_wrapper label .input input {
+    font-family: inherit;
+    @apply w-[100%] p-[10px] h-[35px] bg-transparent outline-none text-[#ffffff] text-[12px] font-[300]
+}
+
+.input_wrapper label .input input::-webkit-inner-spin-button {
+    display: none;
+}
+
+@media screen and (max-width: 640px) {
+    .input_wrapper{
+        @apply
+        max-w-[none]
+        mr-[0]
+    }
+}

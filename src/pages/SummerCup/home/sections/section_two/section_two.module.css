@@ -1,0 +1,158 @@
+.section_two_wrapper {
+  @apply flex
+    flex-col
+    items-center
+    justify-start
+    mb-[200px]
+    w-[100%]
+    /* px-[100px]
+    xl:mb-[100px]
+    xl:px-[70px]
+    sm:px-[40px]
+    xs:px-[20px]; */
+}
+
+.section_two_wrapper .section_two {
+  @apply w-[100%]
+    /* max-w-[1649px] */
+    flex
+    items-start
+    justify-center
+    /* xl:max-w-[900px] */
+    mobile:max-w-[900px]
+    md:max-w-[700px]
+    sm:max-w-[600px];
+}
+
+.section_two_wrapper .section_two .container {
+  @apply w-[100%]
+    flex
+    flex-col
+    items-start
+    justify-start
+    text-[#ffffff];
+}
+
+.section_two_wrapper .section_two .container .title {
+  @apply mb-[40px];
+}
+
+.section_two_wrapper .section_two .container .title h1 {
+  @apply font-[700]
+    text-[40px]
+    text-[#3CB9FF]
+    xs:text-[28px];
+}
+
+.section_two_wrapper .section_two .container .explain {
+  @apply w-[100%]
+    leading-[25.78px]
+    font-[300]
+    text-[22px]
+    xs:!text-[16px]
+    xs:leading-[24px];
+}
+.section_two_wrapper .section_two .container .explain span {
+  @apply
+  font-[700]
+}
+.section_two_wrapper .section_two .container .plays_date {
+  @apply flex
+  flex-wrap
+    gap-x-[200px]
+    gap-y-[24px]
+    mobile:gap-x-[70px]
+    md:flex-col
+    md:gap-[24px]
+    w-[100%]
+    my-[30px];
+}
+
+.section_two_wrapper .section_two .container .plays_date .item {
+  @apply flex
+    items-center
+    justify-start
+    whitespace-nowrap
+    gap-3
+    /* mb-[20px]
+    mr-[59px] */
+    /* md:mr-0
+    md:my-[10px]
+    sm:mr-0
+    sm:my-[10px] */;
+}
+
+.plays_date .item > .key {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.plays_date .item > .value {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.section_two_wrapper .section_two .container .plays_date .item .image {
+  @apply flex
+    w-[32px]
+    h-[32px]
+    items-center
+    justify-center;
+}
+
+.section_two_wrapper .section_two .container .plays_date .item .image img {
+  @apply max-w-[100%]
+    max-h-[100%]
+    object-contain;
+}
+
+.section_two_wrapper .section_two .container .plays_date .item .text {
+  @apply flex
+    flex-wrap
+    items-center
+    justify-start
+    text-[16px]
+    font-[700]
+    leading-[25.78px]
+    xs:text-[14px];
+}
+
+.section_two_wrapper
+  .section_two
+  .container
+  .plays_date
+  .item
+  .text
+  span:last-child {
+  @apply ml-1;
+}
+
+@media screen and (max-width: 640px) {
+  .section_two_wrapper {
+    @apply mb-[100px];
+  }
+  .section_two_wrapper .section_two {
+    @apply max-w-[550px];
+  }
+  .section_two_wrapper .section_two .container .title {
+    @apply mb-[30px];
+  }
+  .section_two_wrapper .section_two .container .title h1 {
+    @apply text-[28px];
+  }
+  .section_two_wrapper .section_two .container .explain {
+    @apply text-[16px];
+  }
+  .section_two_wrapper .section_two .container .plays_date {
+  }
+  .section_two_wrapper .section_two .container .plays_date .item .text {
+    @apply text-[16px];
+  }
+  .section_two_wrapper .section_two .container .plays_date {
+    @apply flex-col
+        items-start;
+  }
+  .section_two_wrapper .section_two .container .plays_date .item {
+    @apply my-[10px];
+  }
+}

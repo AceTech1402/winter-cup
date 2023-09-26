@@ -1,0 +1,32 @@
+.landing_wrapper {
+    background-color: #191b1b;
+    @apply
+    w-[100%]
+    min-h-[100vh]
+    flex
+    relative
+    items-start
+    justify-center
+    z-[1]
+}
+.landing_wrapper::before {
+    content: "";
+    background: url("./../../assets/pictures/home/noise-bg.png");
+    background-repeat: repeat;
+    @apply
+    absolute
+    w-full
+    h-full
+    left-0
+    top-0
+    bottom-0
+    right-0
+    z-[1]
+}
+.landing_wrapper .landing {
+    @apply
+    w-[100%]
+    relative
+    z-[2]
+    overflow-y-clip
+}

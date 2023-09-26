@@ -1,0 +1,180 @@
+.section_four_wrapper {
+    @apply
+    flex
+    w-[100%]
+    items-start
+    justify-start
+    mb-[200px]
+    /* px-[100px]
+    sm:px-[40px]
+    xs:px-[20px]
+    xs:mb-[100px] */
+}
+
+.section_four_wrapper .section_four {
+    @apply
+    flex
+    w-[100%]
+    xxl:max-w-[1649px]
+    items-start
+    justify-center
+    /* xl:max-w-[900px] */
+    mobile:max-w-[900px]
+    md:max-w-[700px]
+    sm:max-w-[600px]
+}
+
+.section_four_wrapper .section_four .container {
+  @apply
+  w-[100%]
+  flex
+  xxl:items-start
+  xxl:flex-row
+  justify-between
+  xl:flex-col-reverse
+  /* xl:items-center */
+}
+
+.section_four_wrapper .section_four .container .items_left {
+  @apply
+  flex
+  flex-col
+  items-start
+  justify-start
+  w-[100%]
+  max-w-[785px]
+  relative
+  z-10
+}
+
+.section_four_wrapper .section_four .container .items_left > .title {
+    @apply
+    mb-[40px]
+    w-[100%]
+    items-center
+    justify-start
+}
+
+.section_four_wrapper .section_four .container .items_left .title h1 {
+    @apply
+    font-[700]
+    text-[#3CB9FF]
+    text-[40px]
+    leading-[46.88px]
+    xs:text-[28px]
+}
+
+.section_four_wrapper .section_four .container .items_left > .explain {
+    @apply
+    flex
+    flex-col
+    items-start
+    justify-start
+    w-[100%]
+    mb-[80px]
+    xs:mb-[80px]
+    gap-y-[40px]
+}
+
+.section_four_wrapper .section_four .container .items_left .explain .item {
+    @apply
+    flex
+    flex-col
+    items-start
+    justify-start
+    /* mb-[60px] */
+}
+
+.section_four_wrapper .section_four .container .items_left .explain .item .title {
+    @apply
+    mb-[16px]
+    w-[100%]
+    flex
+    justify-start
+    items-center
+    font-[700]
+    text-[36px]
+    text-[#ffffff]
+    leading-[42.19px]
+}
+
+.section_four_wrapper .section_four .container .items_left .explain .item .explain {
+    @apply
+    w-[100%]
+    font-[300]
+    text-[#ffffff]
+    text-[22px]
+}
+
+.section_four_wrapper .section_four .container .items_right {
+    @apply
+    flex
+    items-center
+    justify-center
+    self-center
+    mobile:self-center
+}
+
+.section_four_wrapper .section_four .container .items_right .image {
+    @apply
+    md:w-[467px]
+    flex
+    items-center
+    justify-center
+    relative
+    sm:w-[300px]
+}
+
+/* .section_four_wrapper .section_four .container .items_right .image::before {
+    content: "";
+    background: radial-gradient(39% 39% at 50% 50%, rgba(240, 160, 77, 0.4) 0%, rgba(29, 32, 31, 0) 83.65%);
+    @apply
+    absolute
+    w-[2218px]
+    h-[2218px]
+    z-[-1]
+} */
+
+.section_four_wrapper .section_four .container .items_right .image img {
+    @apply
+    max-w-[100%]
+    max-h-[100%]
+    object-contain
+}
+
+@media screen and (max-width: 640px) {
+    .section_four_wrapper {
+        @apply
+        mb-[100px]
+    }
+    .section_four_wrapper .section_four .container .items_right .image{
+        @apply
+        w-[300px]
+    }
+    /* .section_four_wrapper .section_four .container .items_left .explain .item {
+        @apply
+        mb-[30px]
+    } */
+    .section_four_wrapper .section_four .container .items_left .title h1 {
+        @apply
+        text-[28px]
+    }
+    .section_four_wrapper .section_four .container .items_left .explain .item .title {
+        @apply
+        text-[20px]
+    }
+    .section_four_wrapper .section_four .container .items_left .explain .item .explain {
+        @apply
+        text-[16px]
+    }
+
+    .section_four_wrapper .section_four .container {
+        @apply
+        flex-col-reverse
+        items-center
+    }
+    .section_four_wrapper .section_four {
+        @apply
+        max-w-[600px]
+    }
+}

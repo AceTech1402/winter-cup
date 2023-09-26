@@ -1,0 +1,39 @@
+.loading {
+    @apply
+    flex
+    items-center
+    gap-1
+    justify-center
+    ml-[10px]
+}
+
+.loading span {
+    animation-name: loading;
+    animation-timing-function: linear;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    @apply
+    w-[5px]
+    h-[5px]
+    rounded-[10px]
+    bg-dark-purple
+}
+
+.loading span:nth-child(1) {
+    animation-delay: .1s;
+}
+.loading span:nth-child(1) {
+    animation-delay: .25s;
+}
+.loading span:nth-child(1) {
+    animation-delay: .4s;
+}
+
+@keyframes loading {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

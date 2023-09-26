@@ -1,0 +1,73 @@
+.event_box_item {
+    background: linear-gradient(180deg, #2D3A47 0%, rgba(45, 58, 71, 0.00) 100%);
+    box-shadow: 6px 6px 15px 0px rgba(0, 0, 0, 0.60);
+    @apply
+    flex
+    items-center
+    justify-end
+    duration-300
+    bottom-0
+    px-3
+    pr-[10px]
+    pl-[29px]
+    overflow-hidden
+    h-[48px]
+    max-w-[48px]
+    rounded-[10px]
+    border-[1px]
+    border-white
+    xs:max-w-[1000px]
+    -z-[1]
+}
+.event_box_item_wrapper{
+    @apply
+    duration-1000
+    invisible
+    absolute
+    right-0;
+}
+.event_box_item_wrapper.active {
+    @apply
+    right-2
+    visible
+}
+
+.event_box_item:hover {
+    @apply
+    max-w-[1000px]
+}
+
+.event_box_item:hover .text {
+    @apply
+    opacity-100
+    visible
+}
+.event_box_item .icon {
+    @apply
+    w-[25px]
+    min-w-[25px]
+    ml-[17px]
+    flex
+    items-center
+    justify-center
+}
+
+.event_box_item .icon img {
+    @apply
+    max-w-full
+    max-h-full
+    object-contain
+}
+
+.event_box_item .text {
+  @apply
+  text-[18px]
+  font-[600]
+  right-0
+  opacity-100
+  relative
+  invisible
+  whitespace-nowrap
+  xs:opacity-100
+  xs:visible
+}

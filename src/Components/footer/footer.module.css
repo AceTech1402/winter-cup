@@ -1,0 +1,210 @@
+.footer_wrapper {
+    @apply
+    w-full
+    flex
+    items-center
+    flex-col
+    justify-start
+    /* px-[26px] */
+    relative
+    z-[1]
+    mt-auto
+    px-[100px]
+    mobile:px-[50px]
+    sm:px-[25px]
+    xs:px-[16px]
+}
+
+.footer_wrapper .footer {
+    border-color: #ffffff3a;
+    @apply
+    w-full
+    /* max-w-[1583px] */
+    border-t-[2.5px]
+    border-solid
+    flex
+    items-start
+    flex-wrap
+    gap-[60px]
+    justify-center
+    mobile:flex-col
+    mobile:items-center
+    mobile:justify-start
+}
+
+.footer_wrapper .footer .items_left {
+    @apply
+    w-full
+    py-[50px]
+    max-w-[785px]
+    flex
+    items-start
+    justify-center
+    mr-[20px]
+    gap-[130px]
+    md:flex-wrap
+}
+
+.footer_wrapper .footer .items_left .items {
+    @apply
+    flex
+    flex-col
+    items-center
+    justify-start
+    w-full
+    md:max-w-[288px]
+    md:items-start
+}
+
+.footer_wrapper .footer .items_left .items .logo_wrapper {
+    @apply
+    flex
+    flex-col
+    items-center
+    justify-start
+    mb-[20px]
+}
+
+.footer_wrapper .footer .items_left .items .logo_wrapper .logo {
+    @apply
+    w-full
+    max-w-[94px]
+    md:max-w-[70px]
+}
+.footer_wrapper .footer .items_left .items .logo_wrapper .text {
+    @apply
+    text-[28px]
+    font-[700]
+    whitespace-nowrap
+    text-white
+    mt-1
+    md:text-[24px]
+}
+.footer_wrapper .footer .items_left .items .agb a{
+    @apply
+    text-light-blue
+    text-[20px]
+    font-[700]
+}
+.footer_wrapper .footer .items_left .items .title {
+    @apply
+    mb-[10px]
+    text-[#FFEA00]
+    text-[20px]
+    font-[700]
+    w-full
+}
+
+.footer_wrapper .footer .items_left .items ul {
+    @apply
+    w-full
+    flex
+    flex-col
+    items-start
+    justify-start
+    gap-y-[5px]
+}
+.footer_wrapper .footer .items_left .items ul li a {
+    @apply
+    text-[20px]
+    font-[300]
+}
+
+.footer_wrapper .footer .items_left .items ul li p {
+    @apply
+    text-gray-500
+}
+
+.footer_wrapper .footer .items_right {
+    @apply
+    w-full
+    max-w-[500px]
+    pt-[59px]
+    pb-[42px]
+    flex
+    flex-col
+    items-end
+    justify-start
+    ml-auto
+    md:ml-0
+    md:w-auto
+    mobile:max-w-none
+    mobile:items-start
+    xs:py-[25px]
+}
+
+.footer_wrapper .footer .items_right .item {
+    @apply
+    flex
+    flex-col
+    items-start
+    justify-start
+    w-full
+    max-w-[288px]
+    gap-y-[13px]
+}
+
+.footer_wrapper .footer .items_right .item .title {
+    @apply
+    text-[#FFEA00]
+    text-[20px]
+    font-[700]
+}
+
+.footer_wrapper .footer .items_right .item ul {
+    @apply
+    flex
+    flex-col
+    items-start
+    justify-start
+    gap-y-[13px]
+}
+
+.footer_wrapper .footer .items_right .item ul li {
+    @apply
+    flex
+    items-start
+    justify-start
+}
+
+.footer_wrapper .footer .items_right .item ul li .icon {
+    @apply
+    w-[24px]
+    min-w-[24px]
+    h-[24px]
+    flex
+    mr-[12px]
+    mt-[2px]
+}
+.footer_wrapper .footer .items_right .item ul li .icon img {
+    @apply
+    w-full
+    object-contain
+}
+.footer_wrapper .footer .items_right .item ul li .text {
+    @apply
+    text-[20px]
+    font-[300]
+}
+
+.footer_wrapper .link_wrapper {
+    @apply
+    w-full
+    /* max-w-[1583px] */
+    flex
+    items-center
+    justify-start
+    pb-[40px]
+}
+
+.footer_wrapper .link_wrapper p {
+    @apply
+    text-[15px]
+    font-[500]
+}
+
+.footer_wrapper .link_wrapper p a {
+    @apply
+    text-[#FFEA00]
+    ml-[4px]
+}

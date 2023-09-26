@@ -1,0 +1,25 @@
+.header_wrapper {
+    @apply
+    w-full
+    flex
+    justify-center
+    items-start
+    relative
+    z-20
+}
+
+.header_wrapper.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header_wrapper .header {
+    @apply
+    w-full
+    flex
+    flex-col
+    items-center
+    justify-start
+}

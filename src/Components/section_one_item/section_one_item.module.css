@@ -1,0 +1,143 @@
+.section_one_item {
+  background: linear-gradient(327.72deg, rgba(60, 185, 255, 1) 0%, rgba(255, 255, 255, 1) 99.06%);
+  @apply w-[100%]
+    max-w-[206px]
+    min-w-[206px]
+    flex
+    flex-col
+    items-center
+    justify-center
+    relative
+    rounded-[12px]
+    /* mr-[35px]
+    md:mr-[0]
+    md:mb-[115px] */;
+}
+.section_one_item::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 3px);
+  height: calc(100% - 3px);
+  background: linear-gradient(180deg, #2d3a47 0%, rgba(45, 58, 71, 0) 100%);
+  filter: drop-shadow(6px 6px 15px rgba(0, 0, 0, 0.6));
+  backdrop-filter: blur(60px);
+  background: linear-gradient(180deg, #2d3a47 0%, rgba(45, 58, 71, 0) 100%),
+    linear-gradient(327.72deg, #3d6514 0%, #ffffff 99.06%);
+  @apply rounded-[12px];
+}
+
+.section_one_item::before {
+  content: "";
+  width: calc(100% - 3px);
+  height: calc(100% - 3px);
+  background-color: rgba(45, 58, 71, 1);
+  @apply absolute
+    rounded-[12px]
+    z-[2];
+}
+
+.section_one_item:last-child {
+  @apply mr-0;
+}
+
+.section_one_item .image {
+  @apply w-[auto]
+    max-w-[100%]
+    h-[auto]
+    absolute
+    right-0
+    left-0
+    mx-[auto]
+    top-[-85px]
+    flex
+    items-center
+    justify-center
+    z-10;
+}
+
+.section_one_item .image img {
+  @apply max-w-[100%]
+    max-h-[100%]
+    object-contain;
+}
+.section_one_item .caption {
+  @apply pt-[89px]
+    px-[19px]
+    pb-[19px]
+    overflow-hidden
+    w-[100%]
+    flex
+    flex-col
+    items-start
+    justify-start
+    z-10
+    relative
+    h-[100%]
+    rounded-[12px];
+}
+
+.section_one_item .caption::before {
+  box-shadow: 23px 24px 26px 17px rgba(60, 185, 255, 1, 0.5);
+  content: "";
+  @apply absolute
+    w-[114px]
+    h-[88px]
+    opacity-50
+    right-[-10px]
+    bottom-[-10px]
+    bg-[#3CB9FF]
+    -z-[2]
+    blur-[39px];
+}
+
+.section_one_item .caption .title {
+  @apply w-[100%]
+    flex
+    justify-start
+    mb-[8px]
+    font-[600]
+    text-[#ffffff]
+    text-[22px];
+}
+
+.section_one_item .caption .explain {
+  @apply text-[14px]
+  leading-[18.75px]
+  font-[300]
+  text-[#ffffff];
+}
+
+.explain {
+  @apply
+  flex
+  flex-col
+}
+
+.explain .number {
+  font-size: 48px;
+  /* font-size: 64px; */
+  font-weight: 600;
+}
+
+.explain .text {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.explain .location {
+  @apply flex
+  items-end
+  gap-1
+}
+
+.explain .location > span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* @media screen and (max-width: 640px) {
+    .section_one_item {
+        @apply
+        mb-[115px]
+    }
+} */

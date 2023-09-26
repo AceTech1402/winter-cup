@@ -1,0 +1,131 @@
+.section_three_wrapper {
+    @apply
+    w-[100%]
+    flex
+    items-start
+    justify-center
+    mb-[200px]
+    relative
+    z-[1]
+    /* px-[100px]
+    sm:px-[40px]
+    xs:px-[20px]
+    xs:mb-[100px] */
+}
+/* .section_three_wrapper::before {
+    content: "";
+    background: radial-gradient(39% 39% at 50% 50%, rgba(240, 160, 77, 0.8) 0%, rgba(29, 32, 31, 0) 83.65%);
+    @apply
+    absolute
+    w-[2218px]
+    h-[2218px]
+    left-[-56%]
+    top-[-219%]
+    -z-[1]
+} */
+.section_three_wrapper .section_three {
+    @apply
+    w-[100%]
+    xxl:max-w-[1649px]
+    flex
+    items-start
+    justify-center
+    xl:max-w-[900px]
+    mobile:max-w-[900px]
+    md:max-w-[700px]
+    sm:max-w-[600px]
+}
+
+.section_three_wrapper .section_three .container {
+    @apply
+    w-[100%]
+    flex
+    flex-col
+    items-start
+    justify-start
+}
+
+.section_three_wrapper .section_three .container .title {
+    @apply
+    w-[100%]
+    flex
+    justify-start
+    items-center
+    mb-[22px]
+}
+.section_three_wrapper .section_three .container .title h1 {
+    @apply
+    text-[#3CB9FF]
+    text-[40px]
+    font-[700]
+    xs:text-[28px]
+}
+
+.section_three_wrapper .section_three .container .explain {
+    @apply
+    w-[100%]
+    mb-[55px]
+    text-[#ffffff]
+    text-[22px]
+    font-[300]
+    leading-[25.78px]
+}
+
+.section_three_wrapper .section_three .container .sponsers_items{
+    @apply
+    w-[100%]
+    flex
+    items-center
+    justify-center
+    flex-wrap
+}
+
+.section_three_wrapper .section_three .container .sponsers_items .item {
+    @apply
+    w-[200px]
+    h-[200px]
+    flex
+    items-center
+    justify-evenly
+    xxl:mr-[152px]
+    xxl:ml-[0]
+    mb-[50px]
+    xl:mx-[20px]
+    mobile:mx-[20px]
+    md:mx-[10px]
+    sm:mx-[10px]
+}
+
+.section_three_wrapper .section_three .container .sponsers_items .item:last-child {
+    @apply
+    xxl:mr-[0]
+}
+
+
+.section_three_wrapper .section_three .container .sponsers_items .item .image {
+    @apply
+    w-[100%]
+    h-[100%]
+    flex
+    items-center
+    justify-center
+}
+
+@media screen and (max-width: 640px) {
+    .section_three_wrapper {
+        @apply
+        mb-[100px]
+    }
+    .section_three_wrapper .section_three {
+        @apply
+        max-w-[550px]
+    }
+    .section_three_wrapper .section_three .container .title h1 {
+        @apply
+        text-[28px]
+    }
+    .section_three_wrapper .section_three .container .explain {
+        @apply
+        text-[16px]
+    }
+}

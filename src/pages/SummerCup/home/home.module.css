@@ -1,0 +1,126 @@
+.home_wrapper {
+    @apply
+    relative
+    w-[100%]
+    overflow-x-clip
+    z-10
+    px-[100px]
+    mobile:px-[50px]
+    sm:px-[25px]
+    xs:px-[16px]
+    xs:pt-0
+}
+.home {
+    @apply
+    w-[100%]
+}
+
+.home_wrapper .orange_bg1 {
+    background: radial-gradient(45.91% 45.91% at 50% 50%, rgba(6, 78, 162, 0.90) 0%, rgba(29, 32, 31, 0.00) 100%);
+    left: 0px;
+    top: -642px;
+    @apply
+    absolute
+    w-[2218px]
+    h-[2218px]
+    z-[-1]
+    top-[-642px]
+    left-[700px]
+    /* xxl:top-[-642px] */
+    xxl:left-[0]
+    sm:-right-[250px]
+    /* xxl:left-[0] */
+    /* xl:-right-[695px] */
+    mobile:w-[1218px]
+    mobile:h-[1218px]
+    mobile:left-auto
+    mobile:mx-auto
+    mobile:top-[-229px]
+    xs:w-[800px]
+    xs:h-[800px]
+    /* xs:-right-[250px] */
+    /* xl:top-[0%]
+    xl:w-[1400px]
+    xl:h-[1400px]
+    mobile:left-[-87%]
+    mobile:top-[-2%]
+    mobile:w-[1400px]
+    mobile:h-[1400px]
+    md:left-[-7%]
+    md:top-[0%]
+    md:w-[1000px]
+    md:h-[1000px] */
+    /* sm:top-[0%]
+    sm:w-[898px]
+    sm:h-[898px] */
+}
+.home_wrapper .orange_bg2 {
+    background: radial-gradient(45.91% 45.91% at 50% 50%, rgba(60, 185, 255, 0.40) 0%, rgba(29, 32, 31, 0.00) 83.65%);
+    @apply
+    absolute
+    w-[2218px]
+    h-[2218px]
+    z-[-1]
+    top-[11%]
+    left-[-71%]
+    /* xl:left-[-110%]
+    xl:top-[20%]
+    xl:w-[1400px]
+    xl:h-[1400px]
+    mobile:left-[-166%]
+    mobile:top-[26%]
+    mobile:w-[1400px]
+    mobile:h-[1400px]
+    md:left-[-72%]
+    md:top-[15%]
+    md:w-[1000px]
+    md:h-[1000px]
+    sm:left-[-81%]
+    sm:top-[21%]
+    sm:w-[898px]
+    sm:h-[898px] */
+}
+.home_wrapper .orange_bg3 {
+    background: radial-gradient(45.91% 45.91% at 50% 50%, rgba(60, 185, 255, 0.40) 0%, rgba(29, 32, 31, 0.00) 83.65%);
+
+    @apply
+    absolute
+    w-[2218px]
+    h-[2218px]
+    z-[-1]
+    top-[1786px]
+    -right-[35%]
+    /* sm:-right-[250px]
+    xxl:-right-[495px]
+    xl:-right-[695px] */
+    mobile:w-[1218px]
+    mobile:h-[1218px]
+    mobile:left-auto
+    mobile:-right-[10%]
+    mobile:top-[2186px]
+    mobile:mx-auto
+    sm:w-[800px]
+    sm:h-[800px]
+    sm:top-[2886px]
+    sm:-right-[50px]
+    xs:w-[800px]
+    xs:h-[800px]
+    xs:top-[2986px]
+    xs:-right-[200px]
+    /* xl:left-[-34%]
+    xl:top-[35%]
+    xl:w-[1400px]
+    xl:h-[1400px]
+    mobile:left-[-80%]
+    mobile:top-[59%]
+    mobile:w-[1400px]
+    mobile:h-[1400px]
+    md:left-[-10%]
+    md:top-[32%]
+    md:w-[1000px]
+    md:h-[1000px]
+    sm:left-[-16%]
+    sm:top-[37%]
+    sm:w-[898px]
+    sm:h-[898px] */
+}

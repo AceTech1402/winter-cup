@@ -1,0 +1,143 @@
+.link_to_gs_wrapper {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.60);
+    @apply
+    overflow-hidden
+    /* rounded-b-[30px] */
+    w-full
+    py-[10px]
+    px-[26px]
+    flex
+    items-center
+    justify-center
+    relative
+    z-[1]
+    mb-[20px]
+}
+.link_to_gs_wrapper .circle_one {
+    background: radial-gradient(45.91% 45.91% at 50.00% 50%, #FFCB00 0%, rgba(29, 32, 31, 0.00) 83.65%);
+    filter: blur(175px);
+    @apply
+    absolute
+    w-[463px]
+    h-[463px]
+    left-[13px]
+    opacity-80
+    rounded-full
+    top-[-191px]
+    -z-[1]
+}
+.link_to_gs_wrapper .circle_two {
+    background: radial-gradient(45.91% 45.91% at 50.00% 50%, #2FA5CE 0%, rgba(29, 32, 31, 0.00) 83.65%);
+    filter: blur(175px);
+    @apply
+    absolute
+    w-[901px]
+    h-[901px]
+    left-0
+    right-0
+    mx-auto
+    top-[-191px]
+    -z-[1]
+    opacity-80
+    rounded-full
+}
+.link_to_gs_wrapper .circle_three {
+    filter: blur(175px);
+    @apply
+    absolute
+    w-[463px]
+    h-[463px]
+    right-[-105px]
+    top-[-191px]
+    opacity-80
+    rounded-full
+    bg-dark-purple
+    -z-[1]
+}
+.link_to_gs_wrapper .link_to_gs {
+    @apply
+    w-full
+    /* max-w-[1538px] */
+    flex
+    items-center
+    justify-center
+}
+
+.link_to_gs_wrapper .link_to_gs .container {
+    @apply
+    w-full
+    flex
+    items-center
+    justify-center
+    px-[90px]
+}
+
+.link_to_gs_wrapper .link_to_gs .container .logo_wrapper {
+    left: calc((100% - 1538px)/2);
+    @apply
+    flex
+    items-center
+    justify-center
+    absolute
+}
+@media screen and (max-width: 1580px) {
+    .link_to_gs_wrapper .link_to_gs .container .logo_wrapper {
+        @apply
+        left-[26px]
+    }
+}
+.link_to_gs_wrapper .link_to_gs .container .logo_wrapper .logo {
+    @apply
+    flex
+    w-[33px]
+    min-w-[33px]
+    mr-[10px]
+    md:w-[38px]
+    md:min-w-[38px]
+    sm:!w-[25px]
+    sm:!min-w-[25px]
+    sm:mr-[4px]
+}
+
+.link_to_gs_wrapper .link_to_gs .container .logo_wrapper .logo img {
+    @apply
+    max-w-full
+    max-h-full
+    object-contain
+}
+
+.link_to_gs_wrapper .link_to_gs .container .logo_wrapper .logo_text {
+    @apply
+    w-[56px]
+    min-w-[56px]
+    md:w-[61px]
+    md:min-w-[61px]
+    sm:!w-[48px]
+    sm:!min-w-[48px]
+}
+
+.link_to_gs_wrapper .link_to_gs .container .text {
+    @apply
+    text-[20px]
+    font-[700]
+    text-center
+    md:text-[16px]
+    md:font-[500]
+    sm:!text-[12px]
+    sm:!font-[400]
+}
+.link_to_gs_wrapper:hover .link_to_gs .container .text p {
+    background-image: -webkit-linear-gradient(180deg,#2FA5CE,#202249,#FFCB00 70%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientText 1s linear infinite;
+}
+@keyframes gradientText {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
