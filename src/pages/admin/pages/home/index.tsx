@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import AllGoldenSportsRequestsTable from "./golden-sports/allRequestsTable";
 import AllSommerCupRequestsTable from "./sommer-cup/allRequestsTable";
+import AllWinterCupRequestsTable from "./winter-cup/allRequestsTable";
 import useCheckToken from "../../hooks/useCheckToken";
 import TabsList from "../../components/Tabs/TabsList";
 const Home = () => {
@@ -36,6 +37,10 @@ const Home = () => {
           {
             children: <AllSommerCupRequestsTable />,
             title: "EuroChallnege",
+          },
+          {
+            children: <AllWinterCupRequestsTable />,
+            title: "WinterCup",
           },
         ]}
         initialValue={0}

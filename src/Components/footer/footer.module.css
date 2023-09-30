@@ -25,11 +25,13 @@
     flex
     items-start
     flex-wrap
-    gap-[60px]
-    justify-center
+    gap-y-[60px]
+    gap-x-[20x]
+    justify-between
     mobile:flex-col
     mobile:items-center
     mobile:justify-start
+    md:items-center
 }
 
 .footer_wrapper .footer .items_left {
@@ -40,9 +42,10 @@
     flex
     items-start
     justify-center
-    mr-[20px]
     gap-[130px]
     md:flex-wrap
+    md:justify-center
+    md:text-center
 }
 
 .footer_wrapper .footer .items_left .items {
@@ -53,7 +56,8 @@
     justify-start
     w-full
     md:max-w-[288px]
-    md:items-start
+    md:items-center
+    md:text-center
 }
 
 .footer_wrapper .footer .items_left .items .logo_wrapper {
@@ -69,6 +73,9 @@
     @apply
     w-full
     max-w-[94px]
+    flex
+    items-center
+    justify-center
     md:max-w-[70px]
 }
 .footer_wrapper .footer .items_left .items .logo_wrapper .text {
@@ -79,6 +86,7 @@
     text-white
     mt-1
     md:text-[24px]
+    
 }
 .footer_wrapper .footer .items_left .items .agb a{
     @apply
@@ -103,6 +111,7 @@
     items-start
     justify-start
     gap-y-[5px]
+    md:items-center
 }
 .footer_wrapper .footer .items_left .items ul li a {
     @apply
@@ -123,9 +132,10 @@
     pb-[42px]
     flex
     flex-col
-    items-end
+    /* items-end */
     justify-start
-    ml-auto
+    items-start
+    /* ml-auto */
     md:ml-0
     md:w-auto
     mobile:max-w-none
@@ -142,6 +152,7 @@
     w-full
     max-w-[288px]
     gap-y-[13px]
+    md:items-center
 }
 
 .footer_wrapper .footer .items_right .item .title {
@@ -195,6 +206,10 @@
     items-center
     justify-start
     pb-[40px]
+    relative
+    -bottom-[30px]
+    md:justify-center
+    md:text-center
 }
 
 .footer_wrapper .link_wrapper p {

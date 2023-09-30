@@ -7,10 +7,12 @@ export default {
     goldenSports: `${baseUrl}/admin/getAllRequest_goldensports`,
     sommerCup: `${baseUrl}/admin/getAllRequest_sommercup`,
     euroChallenge: `${baseUrl}/admin/getAllRequest_eurochallenge`,
+    winterCup: `${baseUrl}/admin/getAllRequest_wintercup`,
   },
   deleteRequest: {
     goldenSports: `${baseUrl}/admin/deleteRequest_goldensports`,
     sommerCup: `${baseUrl}/admin/deleteRequest_sommercup`,
     euroChallenge: `${baseUrl}/admin/deleteRequest_eurochallenge`,
+    winterCup: `${baseUrl}/admin/deleteRequest_wintercup`,
   },
 };
