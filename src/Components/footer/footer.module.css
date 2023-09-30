@@ -134,7 +134,7 @@
     flex-col
     /* items-end */
     justify-start
-    items-start
+    items-end
     /* ml-auto */
     md:ml-0
     md:w-auto
@@ -142,7 +142,12 @@
     mobile:items-start
     xs:py-[25px]
 }
-
+@media screen and (max-width: 1484px) {
+  .footer_wrapper .footer .items_right {
+    @apply
+    items-start
+  }
+}
 .footer_wrapper .footer .items_right .item {
     @apply
     flex
@@ -207,7 +212,6 @@
     justify-start
     pb-[40px]
     relative
-    -bottom-[30px]
     md:justify-center
     md:text-center
 }
@@ -216,6 +220,8 @@
     @apply
     text-[15px]
     font-[500]
+    md:relative
+    md:-bottom-[30px]
 }
 
 .footer_wrapper .link_wrapper p a {
