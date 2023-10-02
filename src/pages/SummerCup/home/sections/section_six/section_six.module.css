@@ -60,12 +60,12 @@
 }
 
 .section_six_wrapper .section_six .container .final_match_wrapper {
-  background: linear-gradient(327.72deg, rgba(60, 185, 255, 1) 0%, rgba(255, 255, 255, 1) 99.06%);
+  background: #3CB9FF;
   @apply mobile:w-[100%%]
     md:w-full
     sm:w-full
     max-w-[100%]
-    p-[2.5px]
+    p-[2px]
     rounded-[12px]
     flex
     items-start

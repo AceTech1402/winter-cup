@@ -54,7 +54,7 @@
     items-start
     justify-start
     xxl:w-[865px]
-    mr-[-242px]
+    mr-[-10vw]
     mobile:mr-[0]
     /* xl:mr-0 */
     xl:w-[auto]
@@ -64,7 +64,7 @@
     md:w-[auto]
     /* sm:mr-0 */
     sm:w-[auto]
-    max-w-[865px]
+    min-w-[50vw]
 }
 
 .section_one_wrapper .section_one .container .items_left .title {
@@ -207,7 +207,7 @@
 
 .section_one_wrapper .section_one .container .items_right .image {
     @apply
-    w-[50vw]
+    w-[36vw]
     flex
     items-center
     justify-center

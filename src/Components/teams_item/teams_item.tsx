@@ -25,7 +25,7 @@ const TeamsItem: React.FC<{ teams: any[] }> = ({ teams }) => {
     <div className={classes.teams_wrapper}>
       <div className={classes.teams}>
         <div className={classes.title}>
-          <h3>City</h3>
+          <h3>Teams</h3>
         </div>
         <div className={classes.items}>
           {teams.map((item) =>

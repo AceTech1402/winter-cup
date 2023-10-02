@@ -5,24 +5,26 @@ import classes from "./eventsBox.module.css";
 import SommerCupLogo from "./../../logos/sommer-cup-logo.svg";
 import WinterCupLogo from "./../../logos/winter-cup-logo.svg";
 import UniLigaLogo from "./../../logos/uni-liga-logo.svg";
-import GoldenSportsLogo from "./../../logos/golden-sports-logo.svg";
 import KleinfeldLogo from "./../../logos/kleinfeld-logo.svg";
 import EuroChallenge from './../../logos/euro-challange-logo.svg';
+import BusinessLeagueLogo from "./../../logos/business-league-logo.svg";
+import KontinentalLogo from "./../../logos/kontinental-cup-logo.svg";
 import { EventsListType } from "../../types/types";
 import { EventBoxItem } from "../event-box-item/eventBoxItem";
 
 const EventsList: EventsListType[] = [
-  { id: 1, text: "Summer Cup", logo: SommerCupLogo, link: "/" },
-  { id: 2, text: "Winter Cup", logo: WinterCupLogo, link: "#" },
+  { id: 1, text: "Sommer Cup", logo: SommerCupLogo, link: "https://sommercup.goldensports.at/" },
+  { id: 2, text: "Winter Cup", logo: WinterCupLogo, link: "https://wintercup.goldensports.at/" },
   {
     id: 3,
-    text: "Kleinfeld",
+    text: "Kleinfeld WM",
     logo: KleinfeldLogo,
     link: "https://kleinfeldwm.goldensports.at/",
   },
-  { id: 4, text: "Beasiness League", logo: GoldenSportsLogo, link: "#" },
+  { id: 4, text: "Business League", logo: BusinessLeagueLogo, link: "#" },
   { id: 5, text: "Uni Liga", logo: UniLigaLogo, link: "https://uniliga.at/" },
-  { id: 5, text: "Euro Challenge", logo: EuroChallenge, link: "/" },
+  { id: 5, text: "Euro Challenge", logo: EuroChallenge, link: "https://eurochallenge.goldensports.at/" },
+  { id: 6, text: "Kontinental Cup", logo: KontinentalLogo, link: "https://kontinental.goldensports.at/" },
 ];
 
 const EventsBox: React.FC = () => {

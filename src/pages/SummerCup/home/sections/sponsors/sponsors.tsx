@@ -29,11 +29,11 @@ export const Sponsors: React.FC = () => {
   return (
     <div className={classes.sponsersSection}>
       <h1>Sponsoren</h1>
-      <p>
+      {/* <p>
         Die neue Event Management Marke, Golden Sports, veranstaltet die dritte
         Ausgabe vom Sommercup.In diesem Jahr wieder mit top Preisen. Am 9. und
         16. August 2020 gehen die Events über die Bühne.
-      </p>
+      </p> */}
       <ul className={classes.sponsers}>
       {sponsors.map((sponsor) => (
         <span className={classes.sponsor} key={sponsor.id}>

@@ -1,5 +1,5 @@
 .teams_wrapper {
-  background: linear-gradient(327.72deg, rgba(60, 185, 255, 1) 0%, rgba(255, 255, 255, 1) 99.06%);
+  background: #3CB9FF;
   @apply w-[100%]
     /* max-w-[737px] */
     min-h-[165px]
