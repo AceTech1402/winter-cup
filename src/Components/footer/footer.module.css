@@ -97,7 +97,7 @@
 .footer_wrapper .footer .items_left .items .title {
     @apply
     mb-[10px]
-    text-[#FFEA00]
+    text-[#3CB9FF]
     text-[20px]
     font-[700]
     w-full
@@ -162,7 +162,7 @@
 
 .footer_wrapper .footer .items_right .item .title {
     @apply
-    text-[#FFEA00]
+    text-[#3CB9FF]
     text-[20px]
     font-[700]
 }
@@ -226,6 +226,6 @@
 
 .footer_wrapper .link_wrapper p a {
     @apply
-    text-[#FFEA00]
+    text-[#3CB9FF]
     ml-[4px]
 }

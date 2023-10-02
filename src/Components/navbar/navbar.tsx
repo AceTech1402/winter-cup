@@ -110,7 +110,7 @@ const Navbar: React.FC = () => {
                 <p>Result/Schedule</p>
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink
                 to="/sports-platz"
                 className={({ isActive }) => {
@@ -124,7 +124,7 @@ const Navbar: React.FC = () => {
                 </div>
                 <p>SportsPlatz</p>
               </NavLink>
-            </li>
+            </li> */}
           </ul>
           <div className={classes.button}>
             <HashLink to="/register" smooth onClick={() => closeMenu()}>

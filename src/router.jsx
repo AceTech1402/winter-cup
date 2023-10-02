@@ -3,7 +3,6 @@ import { Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 // import Layout from "./Components/Layout";
 import CommingSoon from "./pages/coming-soon/comingSoon";
-import AdminRouter from "./pages/admin/router";
 
 const Router = () => {
   const EuroChallenge = lazy(() => import("./pages/SummerCup/home/home"));
@@ -22,7 +21,6 @@ const Router = () => {
           <Route path="coming-soon" element={<CommingSoon />} />
           {/* <Route path="sports-platz" element={<SportsPlatz />} /> */}
         </Route>
-        <Route path="/admin/*" element={<AdminRouter />} />
       </Routes>
     </Suspense>
   );

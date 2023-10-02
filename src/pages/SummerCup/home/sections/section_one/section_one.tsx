@@ -55,7 +55,7 @@ const SectionOne: React.FC = () => {
                 <img src={Logo} alt="logo" title="logo" />
               </div> */}
               <div className={classes.text}>
-                <h1>Winer Cup</h1>
+                <h1>Winter Cup</h1>
               </div>
             </div>
             <div className={classes.explain}>
