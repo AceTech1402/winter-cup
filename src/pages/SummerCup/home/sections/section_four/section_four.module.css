@@ -28,7 +28,8 @@
   @apply
   w-[100%]
   flex
-  xxl:items-start
+  items-center
+  xxl:items-center
   xxl:flex-row
   justify-between
   xl:flex-col-reverse
@@ -73,7 +74,7 @@
     w-[100%]
     mb-[80px]
     xs:mb-[80px]
-    gap-y-[40px]
+    gap-y-[20px]
 }
 
 .section_four_wrapper .section_four .container .items_left .explain .item {
@@ -92,10 +93,10 @@
     flex
     justify-start
     items-center
-    font-[700]
+    font-[500]
     text-[36px]
     text-[#ffffff]
-    leading-[42.19px]
+    leading-[1.5]
 }
 
 .section_four_wrapper .section_four .container .items_left .explain .item .explain {
@@ -119,6 +120,7 @@
     @apply
     md:w-[467px]
     flex
+    w-[407px]
     items-center
     justify-center
     relative

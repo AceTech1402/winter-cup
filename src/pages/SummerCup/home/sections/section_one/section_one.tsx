@@ -59,7 +59,7 @@ const SectionOne: React.FC = () => {
               </div>
             </div>
             <div className={classes.explain}>
-              <p>Österreichs größte Sommer Turnier Serie</p>
+              <p>Österreichs größte Winter Hallenturnier</p>
             </div>
             {/* <div className={classes.bottom_explain}>
               <p>In Kooperation mit:</p>
@@ -70,7 +70,7 @@ const SectionOne: React.FC = () => {
             <div className={classes.register_wrapper}>
               <div className={classes.counter}>
                 <div className={classes.text}>
-                  <p>Remaining time of registration</p>
+                  <p>verbleibende Zeit bis zum Start</p>
                 </div>
                 <CountDown target_date={target_date} />
               </div>

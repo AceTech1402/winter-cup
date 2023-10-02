@@ -40,21 +40,18 @@ const SectionTwo: React.FC = () => {
             </div>
             <div className={classes.explain}>
               <p>
-                Nach dem großen Erfolg des Sommercups am <span>12. Juli</span>{" "}
-                in Wien, wird das Event nun auf ganz Österreich ausgeweitet.
+                Österreichs größtes Tagesturnier findet heuer wieder am 8.
+                Dezember statt. An der Topanlage West Side Soccer Arena werden
+                auf 5 Courts um den Sieg gekämpft, Wie immer bekommt das
+                Siegerteam eine Playstation 5 pro Spieler überreicht.
               </p>
               <p>
-                Die neue Event Management Marke, Golden Sports, veranstaltet die
-                dritte Ausgabe vom Sommercup.In diesem Jahr wieder mit top
-                Preisen. <span>Am 9. und 16. August 2020</span> gehen die Events
-                über die Bühne.
-              </p>
-              <p>
-                Gespielt wird in 4 Top Standorten in Graz, Linz, Innsbruck und
-                Salzburg.
+                Beim Rekordevent im Jahr 2019 starteten 60 Teams in Turnier. Für
+                dieses Jahr möchten wir diesen Rekord brechen. Wir freuen uns
+                auf euch
               </p>
             </div>
-            <div className={classes.plays_date}>
+            {/* <div className={classes.plays_date}>
               {detailsData.map((item) => (
                 <div className={classes.item} key={item.id}>
                   <span className={classes.image}>
@@ -87,7 +84,7 @@ const SectionTwo: React.FC = () => {
                 Teilnahmeberechtigt ist jeder Spieler ab 16 Jahren. Ob das
                 Teilnehmerfeld vergrößert wird ist nicht garantiert.
               </p>
-            </div>
+            </div> */}
           </div>
           <div className={classes.rightItem}>
             <div className={classes.image}>

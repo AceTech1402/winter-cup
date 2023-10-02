@@ -208,7 +208,7 @@
   gap: 8px;
   position: relative;
   z-index: 10;
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 .final_match .date .icon {
   @apply

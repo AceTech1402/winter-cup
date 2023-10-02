@@ -9,22 +9,22 @@ import thePrize from "./../../../../../assets/pictures/home/the-prize.png";
 const initialPrices = [
   {
     id: 1,
-    title: "Platz",
-    explain:
-      "Die neue Event Management Marke, Golden Sports, veranstaltet die dritte Ausgabe vom Sommercup.In diesem.",
+    title: "Platz: Eine Playstation 5 pro Spieler des Siegerteams",
+    // explain:
+    //   "Die neue Event Management Marke, Golden Sports, veranstaltet die dritte Ausgabe vom Sommercup.In diesem.",
   },
   {
     id: 2,
-    title: "Platz",
-    explain:
-      "Die neue Event Management Marke, Golden Sports, veranstaltet die dritte Ausgabe vom Sommercup.In diesem.",
+    title: "Platz: Eine Garnitur Trikots nach Wahl",
+    // explain:
+    //   "Die neue Event Management Marke, Golden Sports, veranstaltet die dritte Ausgabe vom Sommercup.In diesem.",
   },
-  {
-    id: 3,
-    title: "Platz",
-    explain:
-      "Die neue Event Management Marke, Golden Sports, veranstaltet die dritte Ausgabe vom Sommercup.In diesem.",
-  },
+  // {
+  //   id: 3,
+  //   title: "Platz",
+  //   explain:
+  //     "Die neue Event Management Marke, Golden Sports, veranstaltet die dritte Ausgabe vom Sommercup.In diesem.",
+  // },
 ];
 
 const SectionFour: React.FC = () => {
@@ -42,9 +42,9 @@ const SectionFour: React.FC = () => {
                   <div className={classes.title}>
                     <p>{`${index + 1}. ${item.title}`}</p>
                   </div>
-                  <div className={classes.explain}>
+                  {/* <div className={classes.explain}>
                     <p>{item.explain}</p>
-                  </div>
+                  </div> */}
                 </div>
               ))}
             </div>
