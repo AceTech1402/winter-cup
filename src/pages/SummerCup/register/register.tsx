@@ -118,7 +118,7 @@ const Register = () => {
                     <div className={classes.input_layout}>
                       <div className={classes.input_wrapper}>
                         <label>
-                          <span>First Name</span>
+                          <span>Vorname</span>
                           <div
                             className={`${classes.input} ${
                               errors.f_name ? classes.error : ""
@@ -129,7 +129,7 @@ const Register = () => {
                             <input
                               type="text"
                               {...register("f_name", {
-                                required: "Please complete this field.",
+                                required: "Bitte akzeptieren Sie dieses Feld.",
                               })}
                               onFocus={() => {
                                 setFirstNameStatus(true);
@@ -148,7 +148,7 @@ const Register = () => {
                       </div>
                       <div className={classes.input_wrapper}>
                         <label>
-                          <span>Last Name</span>
+                          <span>Nachname</span>
                           <div
                             className={`${classes.input} ${
                               errors.l_name ? classes.error : ""
@@ -159,7 +159,7 @@ const Register = () => {
                             <input
                               type="text"
                               {...register("l_name", {
-                                required: "Please complete this field.",
+                                required: "Bitte akzeptieren Sie dieses Feld.",
                               })}
                               onFocus={() => {
                                 setLastNameStatus(true);
@@ -180,7 +180,7 @@ const Register = () => {
                     <div className={classes.input_layout}>
                       <div className={classes.input_wrapper}>
                         <label>
-                          <span>Phone Number</span>
+                          <span>Telefonnummer</span>
                           <div
                             className={`${classes.input} ${
                               errors.mobile ? classes.error : ""
@@ -191,7 +191,7 @@ const Register = () => {
                             <input
                               type="number"
                               {...register("mobile", {
-                                required: "Please complete this field.",
+                                required: "Bitte akzeptieren Sie dieses Feld.",
                               })}
                               onFocus={() => {
                                 setPhoneNumberStatus(true);
@@ -210,7 +210,7 @@ const Register = () => {
                       </div>
                       <div className={classes.input_wrapper}>
                         <label>
-                          <span>Email Address</span>
+                          <span>Email-Adresse</span>
                           <div
                             className={`
                         ${classes.input} 
@@ -222,10 +222,10 @@ const Register = () => {
                               type="email"
                               {...register("email", {
                                 pattern: {
-                                  message: "your format email is not currect",
+                                  message: "Ihr E-Mail-Format ist nicht korrekt.",
                                   value: email_regular,
                                 },
-                                required: "Please complete this field.",
+                                required: "Bitte akzeptieren Sie dieses Feld.",
                               })}
                               onFocus={() => {
                                 setEmailStatus(true);
@@ -246,7 +246,7 @@ const Register = () => {
                     <div className={classes.input_layout}>
                       <div className={classes.input_wrapper}>
                         <label>
-                          <span>Address</span>
+                          <span>Adresse</span>
                           <div
                             className={`
                         ${classes.input} 
@@ -257,7 +257,7 @@ const Register = () => {
                             <input
                               type="text"
                               {...register("address", {
-                                required: "Please complete this field.",
+                                required: "Bitte akzeptieren Sie dieses Feld.",
                               })}
                               onFocus={() => {
                                 setAddressStatus(true);
@@ -276,7 +276,7 @@ const Register = () => {
                       </div>
                       <div className={classes.input_wrapper}>
                         <label>
-                          <span>Zip Code</span>
+                          <span>Postleitzahl</span>
                           <div
                             className={`
                             ${classes.input} 
@@ -287,9 +287,9 @@ const Register = () => {
                             <input
                               type="text"
                               {...register("zip_code", {
-                                required: "Please complete this field.",
+                                required: "Bitte akzeptieren Sie dieses Feld.",
                                 maxLength: {
-                                  message: "your zip code is too long.",
+                                  message: "Ihre Postleitzahl ist zu lang.",
                                   value: 6,
                                 },
                               })}
@@ -312,7 +312,7 @@ const Register = () => {
                     <div className={classes.input_layout}>
                       <div className={classes.input_wrapper}>
                         <label>
-                          <span>Country</span>
+                          <span>Nation</span>
                           <div
                             className={`
                             ${classes.input} 
@@ -324,7 +324,7 @@ const Register = () => {
                               {...register("country", {
                                 validate: (value) =>
                                   value === "default"
-                                    ? "Please select your country"
+                                    ? "Bitte wählen Sie Ihr Land."
                                     : undefined,
                               })}
                               onFocus={() => {
@@ -353,7 +353,7 @@ const Register = () => {
                       </div>
                       <div className={classes.input_wrapper}>
                         <label>
-                          <span>City</span>
+                          <span>Stadt</span>
                           <div
                             className={`
                             ${classes.input} 
@@ -364,7 +364,7 @@ const Register = () => {
                             <input
                               type="text"
                               {...register("city", {
-                                required: "Please complete this field.",
+                                required: "Bitte akzeptieren Sie dieses Feld.",
                               })}
                               onFocus={() => {
                                 setCityStatus(true);
@@ -396,7 +396,7 @@ const Register = () => {
                             <input
                               type="text"
                               {...register("team_name", {
-                                required: "Please complete this field.",
+                                required: "Bitte akzeptieren Sie dieses Feld.",
                               })}
                               onFocus={() => {
                                 setTeamNameStatus(true);
@@ -426,7 +426,7 @@ const Register = () => {
                         id="uploadFile"
                         image={plusBox}
                         maxSize={2000000}
-                        {...register("file", { required: "please upload a valid file" })}
+                        {...register("file", { required: "Bitte laden Sie eine gültige Datei hoch." })}
                         onChange={fileInputHandler}
                       />
                       {errors.file && (
@@ -442,7 +442,7 @@ const Register = () => {
                           {...register("acceptAGB", {
                             validate: (value) =>
                               value === false
-                                ? "Please accept this field."
+                                ? "Bitte akzeptieren Sie dieses Feld."
                                 : undefined,
                           })}
                         />

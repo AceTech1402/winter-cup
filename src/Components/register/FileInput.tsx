@@ -74,7 +74,7 @@ const FileInput = forwardRef(
                 src={plusBox}
                 onClick={handleClick}
               />
-              <span>Upload your ID card</span>
+              <span>Laden Sie Ihren Personalausweis hoch</span>
             </>
           ) : (
             <>

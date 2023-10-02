@@ -40,13 +40,13 @@ const SectionSix: React.FC = () => {
           <div className={classes.final_match_layout}>
             <div className={classes.final_match_wrapper}>
               <div className={classes.final_match}>
-                <span className={classes.title}>Ritzing</span>
-                <span className={classes.subtitle}>Sc Ritzing</span>
+                <span className={classes.title}>Linz</span>
+                <span className={classes.subtitle}>Westside soccer arena</span>
                 <div className={classes.date}>
                   <div className={classes.icon}>
                     <img src={calendar} />
                   </div>
-                  <p>2, 3, 15, 16 December</p>
+                  <p>6 August</p>
                 </div>
               </div>
             </div>
