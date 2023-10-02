@@ -27,7 +27,16 @@
 
 .sponsers {
   @apply flex
-  justify-between
+  justify-center
   items-center
   flex-wrap
+  gap-4
+  w-full
+}
+
+.sponsers .sponsor {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

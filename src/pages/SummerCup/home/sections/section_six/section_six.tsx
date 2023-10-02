@@ -2,6 +2,7 @@ import classes from "./section_six.module.css";
 
 import calendar from "./../../../../../icons/calendar.svg";
 import ClockIcon from "./../../../../../icons/clock.svg";
+import locationIconBlue from "./../../../../../icons/location-blue.svg"
 
 const SectionSix: React.FC = () => {
   // const [sportsPlats, setSportsPlats] = useState(initialSportsPlats);
@@ -24,7 +25,7 @@ const SectionSix: React.FC = () => {
       <div className={classes.section_six}>
         <div className={classes.container}>
           <div className={classes.title}>
-            <h1>Sportplätze</h1>
+            <h1>Sportplatz</h1>
           </div>
           {/* <div className={classes.items}>
             {dataSelect.map((item, index) => (
@@ -41,12 +42,18 @@ const SectionSix: React.FC = () => {
             <div className={classes.final_match_wrapper}>
               <div className={classes.final_match}>
                 <span className={classes.title}>Linz</span>
-                <span className={classes.subtitle}>Westside soccer arena</span>
+                <span className={classes.subtitle}>Westside Soccer Arena</span>
+                <div className={classes.date}>
+                  <div className={classes.icon}>
+                    <img src={locationIconBlue} />
+                  </div>
+                  <span>Bahnhofstr.1B, 1140 Wien</span>
+                </div>
                 <div className={classes.date}>
                   <div className={classes.icon}>
                     <img src={calendar} />
                   </div>
-                  <p>6 August</p>
+                  <p>8. Dez</p>
                 </div>
               </div>
             </div>

@@ -442,7 +442,7 @@ const Register = () => {
                           {...register("acceptAGB", {
                             validate: (value) =>
                               value === false
-                                ? "Bitte akzeptieren Sie dieses Feld."
+                                ? "Bitte akzeptieren Sie unsere Rollen."
                                 : undefined,
                           })}
                         />

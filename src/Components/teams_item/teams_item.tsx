@@ -24,15 +24,16 @@ const TeamsItem: React.FC<{ teams: any[] }> = ({ teams }) => {
   return (
     <div className={classes.teams_wrapper}>
       <div className={classes.teams}>
-        <div className={classes.title}>
+        {/* <div className={classes.title}>
           <h3>Teams</h3>
-        </div>
+        </div> */}
         <div className={classes.items}>
-          {teams.map((item) =>
+          {teams.map((item, index) =>
             item.title !== "" ? (
               <div className={classes.item} key={item.id}>
+                <div className={classes.circle}>{index + 1}</div>
                 <p>{item.title}</p>
-                <span>({item.country})</span>
+                {/* <span>({item.country})</span> */}
               </div>
             ) : (
               <div className={classes.empty} key={item.id}></div>

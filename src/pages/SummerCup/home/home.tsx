@@ -18,11 +18,11 @@ const Home = () => {
       <div className={classes.home_wrapper}>
       <div className={classes.orange_bg1}></div>
       <div className={classes.orange_bg2}></div>
-      <div className={classes.orange_bg3}></div>
+      {/* <div className={classes.orange_bg3}></div> */}
       <div className={classes.home}>
         <SectionOne />
-        <SectionTwo />
         <Sponsors />
+        <SectionTwo />
         {/* <SectionThree /> */}
         <SectionFour />
         <SectionFive />

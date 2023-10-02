@@ -16,6 +16,7 @@
   @apply w-[100%]
     /* max-w-[1649px] */
     flex
+    flex-col
     items-start
     justify-center
     /* xl:max-w-[900px] */
@@ -27,17 +28,48 @@
 .section_two_wrapper .section_two .container {
   @apply w-[100%]
     flex
-    flex-col
-    items-start
+    items-center
     justify-start
-    text-[#ffffff];
+    gap-4
+    text-[#ffffff]
+    mobile:flex-col-reverse
 }
 
-.section_two_wrapper .section_two .container .title {
+.section_two_wrapper .section_two .container .leftItem {
+  @apply
+  w-full
+  max-w-[50vw]
+  mobile:max-w-[768px]
+}
+.section_two_wrapper .section_two .container .rightItem {
+  @apply
+  w-full
+  max-w-[50vw]
+  mobile:max-w-full
+  flex
+  items-center
+  justify-center
+}
+.section_two_wrapper .section_two .container .rightItem .image {
+  @apply
+  w-full
+  max-w-[867px]
+  flex
+  items-center
+  justify-center
+  mobile:max-w-[400px]
+}
+.section_two_wrapper .section_two .container .rightItem .image img {
+  @apply
+  max-w-full
+  max-h-full
+  object-contain
+}
+.section_two_wrapper .section_two .title {
   @apply mb-[40px];
 }
 
-.section_two_wrapper .section_two .container .title h1 {
+.section_two_wrapper .section_two .title h1 {
   @apply font-[700]
     text-[40px]
     text-[#3CB9FF]

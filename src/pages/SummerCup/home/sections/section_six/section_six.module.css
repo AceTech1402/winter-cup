@@ -210,11 +210,28 @@
   z-index: 10;
   margin-top: 40px;
 }
-
+.final_match .date .icon {
+  @apply
+  w-[35px]
+  min-w-[35px]
+  h-[35px]
+  flex
+  items-center
+  justify-center
+}
+.final_match .date .icon img {
+  @apply
+  w-full
+}
 .final_match .date > p {
   color: #fff;
   font-size: 36px;
   font-weight: 700;
+}
+
+.final_match .date span {
+  font-size: 20px;
+  font-weight: 300;
 }
 
 .section_six_wrapper

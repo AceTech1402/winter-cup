@@ -28,7 +28,7 @@ const sponsors = [
 export const Sponsors: React.FC = () => {
   return (
     <div className={classes.sponsersSection}>
-      <h1>Sponsoren</h1>
+      <h1>Partners</h1>
       {/* <p>
         Die neue Event Management Marke, Golden Sports, veranstaltet die dritte
         Ausgabe vom Sommercup.In diesem Jahr wieder mit top Preisen. Am 9. und

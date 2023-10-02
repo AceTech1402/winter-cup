@@ -16,26 +16,26 @@ export const sectionOneItems = [
     id: 1,
     image: reward1,
     title: "Time & Location",
-    // number: '2',
-    // text: 'Des.',
-    text: 'Lorem ipsum dolor sit amt, consectetur adipiscing elit, sed do eiusmod tempor. ',
+    number: '8.',
+    text: 'Dez',
+    location: 'Westside Soccer Arena',
   },
   {
     id: 2,
     image: reward2,
     title: "Teams",
-    // number: '80',
+    number: '50',
     // text: 'Club capacity',
-    text: 'Lorem ipsum dolor sit amt, consectetur adipiscing elit, sed do eiusmod tempor. ',
+    text: 'Teams',
   },
-  {
-    id: 3,
-    image: reward3,
-    title: "Winner Reward",
-    // number: '15,000',
-    // text: '€',
-    text: 'Lorem ipsum dolor sit amt, consectetur adipiscing elit, sed do eiusmod tempor. ',
-  },
+  // {
+  //   id: 3,
+  //   image: reward3,
+  //   title: "Winner Reward",
+  //   // number: '15,000',
+  //   // text: '€',
+  //   text: 'Lorem ipsum dolor sit amt, consectetur adipiscing elit, sed do eiusmod tempor. ',
+  // },
 ];
 
 const SectionOne: React.FC = () => {
@@ -83,8 +83,9 @@ const SectionOne: React.FC = () => {
                   id={item.id}
                   title={item.title}
                   image={item.image}
-                  // number={item.number}
+                  number={item.number}
                   text={item.text}
+                  location={item.location}
                 />
               ))}
             </div>

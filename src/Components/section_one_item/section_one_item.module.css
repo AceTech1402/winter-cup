@@ -73,9 +73,15 @@
     z-10
     relative
     h-[100%]
+    gap-y-[10px]
     rounded-[12px];
 }
-
+.section_one_item .caption .numberSection {
+  @apply
+  gap-x-[4px]
+  flex
+  items-baseline
+}
 .section_one_item .caption::before {
   box-shadow: 23px 24px 26px 17px rgba(60, 185, 255, 1, 0.5);
   content: "";
@@ -104,6 +110,7 @@
   @apply text-[14px]
   leading-[18.75px]
   font-[300]
+  gap-y-[10px]
   text-[#ffffff];
 }
 
@@ -112,7 +119,17 @@
   flex
   flex-col
 }
-
+.section_one_item .caption .explain .locationSection {
+  @apply
+  flex
+  items-center
+  justify-start
+  gap-x-[4px]
+}
+.section_one_item .caption .explain .locationSection span {
+  @apply
+  mt-[4px]
+}
 .explain .number {
   font-size: 48px;
   /* font-size: 64px; */
