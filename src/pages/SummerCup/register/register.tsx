@@ -54,7 +54,7 @@ const Register = () => {
     handleSubmit,
     formState: { errors },
     setValue,
-    watch
+    watch,
   } = useForm<RegisterApi>();
 
   const fileInputHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -101,11 +101,15 @@ const Register = () => {
                   </div>
                 </div>
                 <div className={classes.explain}>
-                  <p>Geleitet wird das Event von Schiedsrichtern des ÖKFB.</p>
+                  {/* <p>Geleitet wird das Event von Schiedsrichtern des ÖKFB.</p> */}
+                  <p>Österreichs größte Winter Hallenturnier</p>
                 </div>
-                {/* <div className={classes.bottom_explain}>
-                  <p>In Kooperation mit:</p>
-                </div> */}
+                <div className={classes.bottom_explain}>
+                  <p>
+                    Offizieller Partner des Osterreichischer Kleinfeld Fussball
+                    Bund
+                  </p>
+                </div>
                 <div className={classes.image}>
                   <img src={logoExplain} alt="explain-image" />
                 </div>
@@ -222,7 +226,8 @@ const Register = () => {
                               type="email"
                               {...register("email", {
                                 pattern: {
-                                  message: "Ihr E-Mail-Format ist nicht korrekt.",
+                                  message:
+                                    "Ihr E-Mail-Format ist nicht korrekt.",
                                   value: email_regular,
                                 },
                                 required: "Bitte akzeptieren Sie dieses Feld.",
@@ -426,7 +431,9 @@ const Register = () => {
                         id="uploadFile"
                         image={plusBox}
                         maxSize={2000000}
-                        {...register("file", { required: "Bitte laden Sie eine gültige Datei hoch." })}
+                        {...register("file", {
+                          required: "Bitte laden Sie eine gültige Datei hoch.",
+                        })}
                         onChange={fileInputHandler}
                       />
                       {errors.file && (

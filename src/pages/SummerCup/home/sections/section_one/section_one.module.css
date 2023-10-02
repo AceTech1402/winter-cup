@@ -119,8 +119,9 @@
 }
 .section_one_wrapper .section_one .container .items_left .bottom_explain {
     @apply
-    mb-[20px]
-    text-[24px]
+    mb-[10px]
+    mt-[40px]
+    text-[18px]
 }
 .section_one_wrapper .section_one .container .items_left .explain p {
     @apply

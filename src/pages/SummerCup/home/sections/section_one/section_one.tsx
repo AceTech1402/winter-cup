@@ -43,7 +43,7 @@ const SectionOne: React.FC = () => {
 
   // const [section_one_items, setSection_one_items] = useState(sectionOneItems);
 
-  const [target_date, setTargetDate] = useState<Date>(new Date("7/15/23"));
+  const [target_date, setTargetDate] = useState<Date>(new Date("12/08/23"));
 
   return (
     <div className={classes.section_one_wrapper} ref={section_one}>
@@ -62,7 +62,7 @@ const SectionOne: React.FC = () => {
               <p>Österreichs größte Winter Hallenturnier</p>
             </div>
             {/* <div className={classes.bottom_explain}>
-              <p>In Kooperation mit:</p>
+              <p>Offizieller Partner des Osterreichischer Kleinfeld Fussball Bund</p>
             </div>
             <div className={classes.image}>
               <img src={logoExplain} alt="explain-image" />

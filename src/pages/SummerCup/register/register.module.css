@@ -110,8 +110,10 @@
 }
 
 .register_wrapper .register .container .items_left .bottom_explain {
-  @apply mb-[20px]
-    text-[24px];
+  @apply 
+  mb-[10px]
+  mt-[40px]
+  text-[18px]
 }
 
 .register_wrapper .register .container .items_left .image {
