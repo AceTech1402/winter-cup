@@ -2,13 +2,13 @@ import TeamsItem from "../../../../../Components/teams_item/teams_item";
 import classes from "./section_five.module.css";
 
 const registeredTeams: any[] = [
-  { id: "1", title: "Golden Boys", flag: '', country: 'Aus' },
-  { id: "2", title: "Golden Boys", flag: '', country: 'Aus' },
-  { id: "3", title: "Golden Boys", flag: '', country: 'Aus' },
-  { id: "4", title: "Golden Boys", flag: '', country: 'Aus' },
-  { id: "5", title: "Golden Boys", flag: '', country: 'Aus' },
-  { id: "6", title: "Golden Boys", flag: '', country: 'Aus' },
-  { id: "7", title: "Golden Boys", flag: '', country: 'Aus' },
+  { id: "1", title: "Hinter Mailand", flag: "" },
+  { id: "2", title: "Vatreni Bec", flag: "" },
+  { id: "3", title: "FC Koma", flag: "" },
+  { id: "4", title: "Favoritner Jungs", flag: "" },
+  { id: "5", title: "Graz Devils", flag: "" },
+  { id: "6", title: "Café Amigo", flag: "" },
+  { id: "7", title: "Vienna Kickers", flag: "" },
 ];
 
 const SectionFive: React.FC = () => {
@@ -18,7 +18,7 @@ const SectionFive: React.FC = () => {
         <div className={classes.container}>
           <div className={classes.title}>
             <h1>Angemeldete Teams</h1>
-          </div>  
+          </div>
           <div className={classes.items}>
             <TeamsItem teams={registeredTeams} />
           </div>

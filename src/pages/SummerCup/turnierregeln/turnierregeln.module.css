@@ -1,0 +1,69 @@
+.turnierregeln {
+  @apply
+  px-[100px]
+  pt-[95px]
+  pb-[167px]
+  mobile:pb-[67px]
+  mobile:px-[50px]
+  sm:px-[25px]
+  xs:px-[16px]
+  xs:pt-0
+}
+
+.heading {
+  margin-bottom: 37px;
+}
+
+.heading > h1 {
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  @apply
+  mobile:text-[40px]
+}
+
+.content > h4 {
+  font-size: 32px;
+  font-weight: 500;
+  @apply
+  mobile:text-[20px]
+}
+
+/* .heading h4 {
+  font-size: 32px;
+  font-weight: 500;
+  @apply
+  mobile:text-[20px]
+} */
+
+
+.content {
+  @apply
+  flex
+  flex-col
+  gap-[20px]
+  mobile:gap-[30px]
+  md:gap-4
+}
+
+.content p {
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+/* .content img {
+  border-radius: 12px;
+  border: 2.5px solid #3d6514;
+} */
+
+/* .content > .groupPicture {
+  display: flex;
+  justify-content: space-between;
+  @apply
+  flex
+  gap-[66px]
+  xl:gap-[50px]
+  md:flex-col
+  mobile:gap-[16px]
+} */

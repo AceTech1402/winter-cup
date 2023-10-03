@@ -110,6 +110,21 @@ const Navbar: React.FC = () => {
                 <p>Result/Schedule</p>
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/turnierregeln"
+                className={({ isActive }) => {
+                  setActiveClass(true);
+                  return isActive ? classes.active : "";
+                }}
+                onClick={() => closeMenu(3)}
+              >
+                <div className={classes.image}>
+                  <CupIcon selected={actvieClass} />
+                </div>
+                <p>Turnierregeln</p>
+              </NavLink>
+            </li>
             {/* <li>
               <NavLink
                 to="/sports-platz"
