@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <>
     <Helmet>
-      <title>WinterCup</title>
+      <title>Wintercup</title>
     </Helmet>
       <div className={classes.home_wrapper}>
       <div className={classes.orange_bg1}></div>

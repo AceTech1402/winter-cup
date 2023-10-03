@@ -27,7 +27,7 @@
 
 .sponsers {
   @apply flex
-  justify-center
+  justify-between
   items-center
   flex-wrap
   gap-4
@@ -35,7 +35,6 @@
 }
 
 .sponsers .sponsor {
-  flex-grow: 1;
   display: flex;
   align-items: center;
   justify-content: center;

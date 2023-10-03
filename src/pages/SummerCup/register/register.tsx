@@ -97,7 +97,7 @@ const Register = () => {
                     <img src={Logo} alt="logo" title="logo" />
                   </div> */}
                   <div className={classes.text}>
-                    <h1>Winter Cup</h1>
+                    <h1>Wintercup</h1>
                   </div>
                 </div>
                 <div className={classes.explain}>
@@ -339,9 +339,7 @@ const Register = () => {
                                 setCountryStatus(false);
                               }}
                             >
-                              <option value="default">
-                                select your country
-                              </option>
+                              <option value="default">Wähle dein Land</option>
                               {countriesResult.map((country) => (
                                 <option value={country.id}>
                                   {country.name}
@@ -390,7 +388,7 @@ const Register = () => {
                     <div className={classes.input_layout}>
                       <div className={classes.input_wrapper}>
                         <label>
-                          <span>Team Name</span>
+                          <span>Teamname</span>
                           <div
                             className={`
                             ${classes.input} 

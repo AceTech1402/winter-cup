@@ -47,7 +47,7 @@ const SectionSix: React.FC = () => {
                   <div className={classes.icon}>
                     <img src={locationIconBlue} />
                   </div>
-                  <span>Bahnhofstr.1B, 1140 Wien</span>
+                  <span>Bahnhofstr. 1B, 1140 Wien</span>
                 </div>
                 <div className={classes.date}>
                   <div className={classes.icon}>

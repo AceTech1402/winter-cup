@@ -1,27 +1,30 @@
 import classes from './sponsors.module.css';
-import sponsor1 from './../../../../../assets/pictures/home/sponsor1.svg';
-import sponsor2 from './../../../../../assets/pictures/home/sponsor2.svg';
+import OKFBSponser from "./../../../../../assets/pictures/home/paterns/sponser-okfb.svg";
+import AcetechSponser from "./../../../../../assets/pictures/home/paterns/sponser-acetech.svg";
+import ErimaSponser from "./../../../../../assets/pictures/home/paterns/sponser-erima.svg";
+import DieSponser from "./../../../../../assets/pictures/home/paterns/die.svg";
+import WSASponser from "./../../../../../assets/pictures/home/paterns/wsa.svg";
 
 const sponsors = [
   {
     id: '1',
-    logo: sponsor1,
+    logo: OKFBSponser,
   },
   {
     id: '2',
-    logo: sponsor2,
+    logo: AcetechSponser,
   },
   {
     id: '3',
-    logo: sponsor1,
+    logo: WSASponser,
   },
   {
     id: '4',
-    logo: sponsor2,
+    logo: DieSponser,
   },
   {
     id: '5',
-    logo: sponsor2,
+    logo: ErimaSponser,
   },
 ]
 
