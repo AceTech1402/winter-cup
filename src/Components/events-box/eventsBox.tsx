@@ -26,7 +26,7 @@ const EventsList: EventsListType[] = [
   { id: 5, text: "Uni Liga", logo: UniLigaLogo, link: "https://uniliga.at/" },
   { id: 6, text: "Euro Challenge", logo: EuroChallenge, link: "https://eurochallenge.goldensports.at/" },
   { id: 7, text: "Kontinental Cup", logo: KontinentalLogo, link: "https://kontinental.goldensports.at/" },
-  { id: 8, text: "Austria Tour", logo: AustriaTourLogo, link: "/" },
+  { id: 8, text: "Austria Tour", logo: AustriaTourLogo, link: "https://austriatour.at/" },
 ];
 
 const EventsBox: React.FC = () => {
