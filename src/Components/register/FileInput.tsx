@@ -27,6 +27,7 @@ const FileInput = forwardRef(
 
     const [previewImage, setPreviewImage] = useState<any>(image);
     const [isUploaded, setIsUploaded] = useState<boolean>(false);
+    const [error, setError] = useState<string>("");
     const handleClick = () => {
       document.getElementById(id)?.click();
     };
@@ -42,8 +43,10 @@ const FileInput = forwardRef(
       if (maxSize && isFile) {
         if (e?.target?.files[0]?.size > maxSize) {
           // dispatch(showError(`File must be less than ${maxSize / 1000000}Mb`));
-          e.target.value = "";
+          // e.target.value = "";
           // e.target.files = [];
+          console.log(e?.target?.files[0]?.size);
+          setError("Die Größe der ausgewählten Datei ist größer als 2MB");
           return;
         }
       }
@@ -53,20 +56,20 @@ const FileInput = forwardRef(
         if (!fileTypes.includes(fileType)) {
           // dispatch(showError(`Wrong file type`));
           e.target.value = "";
+          setError("");
           return;
         }
       }
       if (e.target.files.length > 0)
         setPreviewImage(URL?.createObjectURL(e.target.files[0]));
       setIsUploaded(true);
+      setError("");
       onChange?.(e);
     };
 
     return (
       <>
-        <div
-        className={classes.importFileContainer}
-        >
+        <div className={classes.importFileContainer}>
           {!isUploaded ? (
             <>
               <img
@@ -75,6 +78,7 @@ const FileInput = forwardRef(
                 onClick={handleClick}
               />
               <span>Laden Sie Ihren Personalausweis hoch</span>
+              
             </>
           ) : (
             <>
@@ -95,6 +99,7 @@ const FileInput = forwardRef(
                   Change
                 </button>
               </div>
+              
             </>
           )}
         </div>
@@ -108,6 +113,7 @@ const FileInput = forwardRef(
             handleChange(e);
           }}
         />
+        {error !== "" && <span className={classes.error}>{error}</span>}
       </>
     );
   }

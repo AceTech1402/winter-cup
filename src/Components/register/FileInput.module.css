@@ -1,11 +1,13 @@
 .uploadBox {
   cursor: pointer;
+  display: flex;
 }
 
 .importFileContainer {
   display: flex;
   align-items: center;
   gap: 12px;
+  justify-content: flex-start;
 }
 
 .importFileContainer img {
@@ -14,7 +16,14 @@
 
 .imgContainer {
   @apply
-  flex justify-center items-center h-full w-full relative
+  flex justify-center items-center relative
+}
+
+span.error {
+  @apply
+  text-red
+  mt-2
+  text-[14px]
 }
 
 .imgContainer > .changeBtn {
