@@ -110,10 +110,9 @@
 }
 
 .register_wrapper .register .container .items_left .bottom_explain {
-  @apply 
-  mb-[10px]
+  @apply mb-[10px]
   mt-[40px]
-  text-[18px]
+  text-[18px];
 }
 
 .register_wrapper .register .container .items_left .image {
@@ -324,7 +323,11 @@
 }
 
 .register_wrapper .orange_bg1 {
-  background: radial-gradient(45.91% 45.91% at 50% 50%, rgba(60, 185, 255, 0.40) 0%, rgba(29, 32, 31, 0.00) 83.65%);
+  background: radial-gradient(
+    45.91% 45.91% at 50% 50%,
+    rgba(60, 185, 255, 0.4) 0%,
+    rgba(29, 32, 31, 0) 83.65%
+  );
   @apply absolute
   w-[2218px]
   h-[2218px]
@@ -431,7 +434,11 @@
 
 .input_wrapper label .input {
   transition: 0.3s;
-  background: linear-gradient(327.72deg, rgba(60, 185, 255, 1) 0%, rgba(255, 255, 255, 1) 99.06%);
+  background: linear-gradient(
+    327.72deg,
+    rgba(60, 185, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 99.06%
+  );
 
   @apply w-[100%] flex justify-start items-center relative rounded-[5px] z-[1];
 }
@@ -448,7 +455,7 @@
 }
 
 .input_wrapper label .input.active {
-  background: #3CB9FF;
+  background: #3cb9ff;
 }
 
 .input_wrapper label .input.error {

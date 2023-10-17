@@ -62,23 +62,13 @@ const Register = () => {
   };
 
   const handleRegister = (data: RegisterApi) => {
-    // let data_req = {
-    //   f_name: data.firstName,
-    //   l_name: data.lastName,
-    //   mobile: data.phoneNumber,
-    //   email: data.email,
-    //   address: data.address,
-    //   zip_code: data.zipCode,
-    //   Country: data.Country,
-    //   team_name: data.teamName,
-    // };
     handle_register(data);
   };
 
   return (
     <>
       <Helmet>
-        <title>WinterCup | Register</title>
+        <title>Wintercup | Register</title>
       </Helmet>
       <Popup
         showPopup={popupStatus.showPopup}
@@ -317,45 +307,6 @@ const Register = () => {
                     <div className={classes.input_layout}>
                       <div className={classes.input_wrapper}>
                         <label>
-                          <span>Nation</span>
-                          <div
-                            className={`
-                            ${classes.input} 
-                            ${errors.country ? classes.error : ""}
-                            ${countryStatus ? classes.active : ""}
-                            `}
-                          >
-                            <select
-                              {...register("country", {
-                                validate: (value) =>
-                                  value === "default"
-                                    ? "Bitte wählen Sie Ihr Land."
-                                    : undefined,
-                              })}
-                              onFocus={() => {
-                                setCountryStatus(true);
-                              }}
-                              onBlur={() => {
-                                setCountryStatus(false);
-                              }}
-                            >
-                              <option value="default">Wähle dein Land</option>
-                              {countriesResult.map((country) => (
-                                <option value={country.id}>
-                                  {country.name}
-                                </option>
-                              ))}
-                            </select>
-                          </div>
-                          {errors.country && (
-                            <span className={classes.error}>
-                              {errors.country.message}
-                            </span>
-                          )}
-                        </label>
-                      </div>
-                      <div className={classes.input_wrapper}>
-                        <label>
                           <span>Stadt</span>
                           <div
                             className={`
@@ -384,37 +335,38 @@ const Register = () => {
                           )}
                         </label>
                       </div>
-                    </div>
-                    <div className={classes.input_layout}>
-                      <div className={classes.input_wrapper}>
-                        <label>
-                          <span>Teamname</span>
-                          <div
-                            className={`
+                      <div className={classes.input_layout}>
+                        <div className={classes.input_wrapper}>
+                          <label>
+                            <span>Teamname</span>
+                            <div
+                              className={`
                             ${classes.input} 
                             ${errors.team_name ? classes.error : ""}
                             ${teamNameStatus ? classes.active : ""}
                             `}
-                          >
-                            <input
-                              type="text"
-                              {...register("team_name", {
-                                required: "Bitte akzeptieren Sie dieses Feld.",
-                              })}
-                              onFocus={() => {
-                                setTeamNameStatus(true);
-                              }}
-                              onBlur={() => {
-                                setTeamNameStatus(false);
-                              }}
-                            />
-                          </div>
-                          {errors.team_name && (
-                            <span className={classes.error}>
-                              {errors.team_name.message}
-                            </span>
-                          )}
-                        </label>
+                            >
+                              <input
+                                type="text"
+                                {...register("team_name", {
+                                  required:
+                                    "Bitte akzeptieren Sie dieses Feld.",
+                                })}
+                                onFocus={() => {
+                                  setTeamNameStatus(true);
+                                }}
+                                onBlur={() => {
+                                  setTeamNameStatus(false);
+                                }}
+                              />
+                            </div>
+                            {errors.team_name && (
+                              <span className={classes.error}>
+                                {errors.team_name.message}
+                              </span>
+                            )}
+                          </label>
+                        </div>
                       </div>
                     </div>
                     <div className={classes.importFileContainer}>

@@ -28,20 +28,10 @@ const useRegister = () => {
   };
 
   const handle_register = async (data: RegisterApi) => {
-    // const formData = new FormData();
-    // formData.append("f_name", f_name);
-    // formData.append("l_name", l_name);
-    // formData.append("mobile", mobile);
-    // formData.append("address", address);
-    // formData.append("email", email);
-    // formData.append("zip_code", zip_code);
-    // formData.append("city", city);
-    // formData.append("team_name", team_name);
-
     try {
       setSending(true);
       await axios
-        .post(API.auth.addRequest, data, {
+        .post(API.auth.addRequest, {...data, country: 'Austria'}, {
           headers: {
             "Content-Type": "multipart/form-data",
           },
