@@ -3,10 +3,8 @@ import { SectionOneItem } from "./../../../../../Components/section_one_item/sec
 import CountDown from "../../../../../Components/count_down/count_down";
 //images
 import heroImg from "./../../../../../assets/pictures/home/hero-img.png";
-import logoExplain from "./../../../../../assets/pictures/home/logo-explain.png";
 import reward1 from "./../../../../../assets/pictures/home/stadium.png";
 import reward2 from "./../../../../../assets/pictures/home/kit.png";
-import reward3 from "./../../../../../assets/pictures/home/suitcase.png";
 import classes from "./section_one.module.css";
 //initial_data
 import ButtonRegister from "../../../../../Components/button_register/button_register";

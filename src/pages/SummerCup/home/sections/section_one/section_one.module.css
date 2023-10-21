@@ -7,6 +7,7 @@
     pt-[50px]
     mb-[200px]
     relative
+    mobile:pt-0
     /* pl-[100px]
     mobile:px-[100px]
     xs:mb-[100px]
@@ -208,11 +209,14 @@
 
 .section_one_wrapper .section_one .container .items_right .image {
     @apply
-    w-[36vw]
+    w-[45vw]
+    bottom-[90px]
     flex
     items-center
     justify-center
     relative
+    mobile:bottom-0
+    mobile:w-[62vw]
     xs:w-[100vw]
     xs:mb-[40px]
     /* xl:w-[700px]
