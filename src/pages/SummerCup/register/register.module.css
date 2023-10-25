@@ -579,3 +579,8 @@
     z-10
     ml-[4px];
 }
+
+.eventPrice {
+  font-size: 20px;
+  font-weight: 500;
+}

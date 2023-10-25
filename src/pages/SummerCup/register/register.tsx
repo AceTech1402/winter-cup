@@ -424,6 +424,7 @@ const Register = () => {
                         </span>
                       )}
                     </div>
+                    <span className={classes.eventPrice}>Nenngeld: 150€</span>
 
                     <div className={classes.button_show_register}>
                       <NavLink to="/" className={classes.button_back}>

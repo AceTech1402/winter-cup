@@ -48,7 +48,8 @@ const SectionTwo: React.FC = () => {
               <p>
                 Beim Rekordevent im Jahr 2019 starteten 60 Teams in Turnier. Für
                 dieses Jahr möchten wir diesen Rekord brechen. Wir freuen uns
-                auf euch
+                auf euch <br />
+                Nenngeld: 150€
               </p>
             </div>
             {/* <div className={classes.plays_date}>
