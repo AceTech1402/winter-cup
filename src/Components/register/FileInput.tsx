@@ -45,7 +45,6 @@ const FileInput = forwardRef(
           // dispatch(showError(`File must be less than ${maxSize / 1000000}Mb`));
           // e.target.value = "";
           // e.target.files = [];
-          console.log(e?.target?.files[0]?.size);
           setError("Die Größe der ausgewählten Datei ist größer als 2MB");
           return;
         }
