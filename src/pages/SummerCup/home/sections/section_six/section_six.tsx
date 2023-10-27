@@ -41,7 +41,7 @@ const SectionSix: React.FC = () => {
           <div className={classes.final_match_layout}>
             <div className={classes.final_match_wrapper}>
               <div className={classes.final_match}>
-                <span className={classes.title}>Linz</span>
+                <span className={classes.title}>Wien</span>
                 <span className={classes.subtitle}>Westside Soccer Arena</span>
                 <div className={classes.date}>
                   <div className={classes.icon}>
