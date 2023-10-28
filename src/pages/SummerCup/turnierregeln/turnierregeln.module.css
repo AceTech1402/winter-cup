@@ -7,7 +7,7 @@
   mobile:px-[50px]
   sm:px-[25px]
   xs:px-[16px]
-  xs:pt-0
+  xs:pt-[24px]
 }
 
 .heading {
@@ -29,14 +29,6 @@
   mobile:text-[20px]
 }
 
-/* .heading h4 {
-  font-size: 32px;
-  font-weight: 500;
-  @apply
-  mobile:text-[20px]
-} */
-
-
 .content {
   @apply
   flex
@@ -50,20 +42,6 @@
   font-size: 22px;
   font-weight: 300;
   margin-bottom: 30px;
-}
-
-/* .content img {
-  border-radius: 12px;
-  border: 2.5px solid #3d6514;
-} */
-
-/* .content > .groupPicture {
-  display: flex;
-  justify-content: space-between;
   @apply
-  flex
-  gap-[66px]
-  xl:gap-[50px]
-  md:flex-col
-  mobile:gap-[16px]
-} */
+  mobile:text-[16px]
+}

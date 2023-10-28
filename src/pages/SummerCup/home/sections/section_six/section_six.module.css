@@ -44,7 +44,7 @@
   @apply text-[#3CB9FF]
     text-[40px]
     font-[700]
-    xs:text-[28px];
+    sm:text-[28px];
 }
 
 .section_six_wrapper .section_six .container .items {
@@ -132,7 +132,7 @@
     justify-start
     z-10
     flex-grow
-    xs:order-2
+    /* xs:order-2 */
     xs:flex-col
     xs:w-full
     xs:items-start;
@@ -178,8 +178,9 @@
     z-10
     text-center
     mr-[120px]
+    sm:text-[24px]
     xxl:mr-0
-    xs:order-1;
+    /* xs:order-1; */
 }
 
 .section_six_wrapper
@@ -199,7 +200,8 @@
     flex
     items-center
     justify-end
-    xs:order-3;
+    sm:text-[20px]
+    /* xs:order-3; */
 }
 
 .final_match .date {
@@ -213,11 +215,13 @@
 .final_match .date .icon {
   @apply
   w-[35px]
-  min-w-[35px]
   h-[35px]
+  /* min-w-[35px] */
   flex
   items-center
   justify-center
+  sm:w-[24px]
+  sm:h-[24px]
 }
 .final_match .date .icon img {
   @apply
@@ -227,11 +231,15 @@
   color: #fff;
   font-size: 36px;
   font-weight: 700;
+  @apply
+  sm:text-[28px]
 }
 
 .final_match .date span {
   font-size: 20px;
   font-weight: 300;
+  @apply
+  sm:text-[16px]
 }
 
 .section_six_wrapper

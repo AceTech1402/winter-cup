@@ -57,14 +57,11 @@
     xxl:w-[865px]
     mr-[-10vw]
     mobile:mr-[0]
-    /* xl:mr-0 */
     xl:w-[auto]
-    /* mobile:mr-0 */
     mobile:w-[auto]
     md:mr-0
     md:w-[auto]
-    /* sm:mr-0 */
-    sm:w-[auto]
+    sm:w-full
     min-w-[50vw]
 }
 
@@ -181,7 +178,7 @@
     text-[#3CB9FF]
     text-[18px]
     font-[400]
-    xs:mb-0
+    /* xs:mb-0 */
 }
 
 .section_one_wrapper .section_one .container .items_left .items {
@@ -219,51 +216,14 @@
     mobile:w-[62vw]
     xs:w-[100vw]
     xs:mb-[40px]
-    /* xl:w-[700px]
-    mobile:w-[700px]
-    md:w-[500px]
-    sm:w-[400px] */
-    /* xl:mb-[20px]
-    mobile:mb-[20px]
-    md:mb-[10px]
-    sm:mb-[10px] */
 }
 
-/* .section_one_wrapper .section_one .container .items_right .image::before {
-    content: "";
-    background: radial-gradient(39% 39% at 50% 50%, rgba(240, 160, 77, 0.4) 0%, rgba(29, 32, 31, 0) 83.65%);
-    @apply
-    absolute
-    w-[2218px]
-    h-[2218px]
-    z-[-1]
-    top-[-50%]
-    left-[-50%]
-} */
 
 .section_one_wrapper .section_one .container .items_right .image img {
     @apply
     max-w-[100%]
     max-h-[100%]
     object-contain
-}
-/* @media screen and (max-width: 1440px) {
-    .section_one_wrapper .section_one .container {
-        @apply
-        flex-col-reverse
-        items-center
-        justify-start
-    }
-    .section_one_wrapper .section_one .container .items_left {
-        @apply
-        !mr-0
-    }
-} */
-@media screen and (max-width: 1660px) {
-    /* .section_one_wrapper .section_one .container .items_left{
-        @apply
-        mr-[-360px]
-    } */
 }
 @media screen and (max-width: 640px) {
     .section_one_wrapper {
@@ -276,10 +236,6 @@
         w-[100%]
         max-w-[400px]
     }
-    /* .section_one_wrapper .section_one {
-        @apply
-        max-w-[540px]
-    } */
     .section_one_wrapper .section_one .container {
         @apply
         flex-col-reverse
@@ -292,15 +248,11 @@
         flex-col
         items-center
     }
-    /* .section_one_wrapper .section_one .container .items_left .register_wrapper .counter{
-        @apply
-        items-center
-    } */
-    .section_one_wrapper .section_one .container .items_left {
+    /* .section_one_wrapper .section_one .container .items_left {
         @apply
         mr-0
         w-[auto]
-    }
+    } */
     .section_one_wrapper .section_one .container .items_left .title .logo {
         @apply
         w-[57px]

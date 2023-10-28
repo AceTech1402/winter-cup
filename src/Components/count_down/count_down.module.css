@@ -27,6 +27,7 @@
     text-[#ffffff]
     font-[400]
     text-center
+    sm:text-[28px]
 }
 
 .counter_items .item .title {
