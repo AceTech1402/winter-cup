@@ -55,15 +55,15 @@ const CountDown: React.FC<{ target_date: Date }> = ({ target_date }) => {
     <div className={classes.counter_items}>
       <div className={classes.item}>
         <span className={classes.number}>{days}</span>
-        <span className={classes.title}>Days</span>
+        <span className={classes.title}>Tage</span>
       </div>
       <div className={classes.item}>
         <span className={classes.number}>{hours}</span>
-        <span className={classes.title}>Hours</span>
+        <span className={classes.title}>Stunden</span>
       </div>
       <div className={classes.item}>
         <span className={classes.number}>{minutes}</span>
-        <span className={classes.title}>Minutes</span>
+        <span className={classes.title}>Minuten</span>
       </div>
       {/* <div className={classes.item}>
         <div className={classes.number}>
