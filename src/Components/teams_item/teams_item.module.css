@@ -36,7 +36,8 @@
     justify-start
     relative
     z-[2]
-    h-full;
+    h-full
+    xs:w-auto
 }
 
 .teams_wrapper .teams .title {
@@ -78,6 +79,7 @@
     font-[300]
     text-[20px]
     gap-x-[10px]
+    w-[340px]
     whitespace-nowrap;
 }
 .teams_wrapper .teams .items .item p {
@@ -171,10 +173,12 @@
         flex-col
         items-start
         justify-start
+        flex-nowrap
         overflow-y-auto;
   }
   .teams_wrapper .teams .items .item {
     @apply text-[16px]
+    w-full
         justify-start;
   }
   .teams_wrapper .teams .items .empty {

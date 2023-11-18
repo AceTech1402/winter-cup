@@ -53,7 +53,7 @@
     flex-wrap
     justify-center
     gap-y-[40px]
-    xxl:gap-x-[20px]
+    xxl:gap-x-[4vw]
     w-full;
 }
 @media screen and (max-width: 1570px) {
