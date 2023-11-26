@@ -44,3 +44,20 @@ export interface RegisterApi {
 }
 
 export type CountryType = { code: string; id: string; name: string };
+
+export type UsersType = {
+  address: string;
+  city: string;
+  country_code: string;
+  country_name: string;
+  create_at: string;
+  email: string;
+  f_name: string;
+  flag_url: string;
+  l_name: string;
+  mobile: string;
+  status: string;
+  team_name: string;
+  wintercup_request__id: string;
+  zip_code: string;
+};

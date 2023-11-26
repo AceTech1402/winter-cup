@@ -1,13 +1,7 @@
+import { useEffect } from "react";
 import TeamsItem from "../../../../../Components/teams_item/teams_item";
 import classes from "./section_five.module.css";
-
-// { id: "1", title: "Hinter Mailand", flag: "" },
-//   { id: "2", title: "Vatreni Bec", flag: "" },
-//   { id: "3", title: "FC Koma", flag: "" },
-//   { id: "4", title: "Favoritner Jungs", flag: "" },
-//   { id: "5", title: "Graz Devils", flag: "" },
-//   { id: "6", title: "Café Amigo", flag: "" },
-//   { id: "7", title: "Vienna Kickers", flag: "" },
+import { useGetRegistered } from "../../../../../Hooks/useGetRegistered";
 
 const registeredTeams: any[] = [
   { id: "1", title: "Racing Vienna", flag: "" },
@@ -63,6 +57,21 @@ const registeredTeams: any[] = [
 ];
 
 const SectionFive: React.FC = () => {
+  const { getRegistered, result } = useGetRegistered();
+
+  useEffect(() => {
+    getRegistered();
+  }, []);
+
+  console.log(result);
+
+  const apiRegisteredTeams = result.map((user, i) => {
+    return {
+      id: i,
+      title: user.team_name,
+    };
+  });
+
   return (
     <div className={classes.section_five_wrapper}>
       <div className={classes.section_five}>
@@ -71,7 +80,7 @@ const SectionFive: React.FC = () => {
             <h1>Angemeldete Teams</h1>
           </div>
           <div className={classes.items}>
-            <TeamsItem teams={registeredTeams} />
+            <TeamsItem teams={[...registeredTeams, ...apiRegisteredTeams]} />
           </div>
         </div>
       </div>

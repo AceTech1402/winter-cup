@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import classes from "./teams_item.module.css";
 
 const TeamsItem: React.FC<{ teams: any[] }> = ({ teams }) => {
-
   // const [changeItems, setChangeItems] = useState(teams)
   // const pushEmptyObject = (teams: any[]) => {
   //   let number = 0;
@@ -30,7 +29,7 @@ const TeamsItem: React.FC<{ teams: any[] }> = ({ teams }) => {
         <div className={classes.items}>
           {teams.map((item, index) =>
             item.title !== "" ? (
-              <div className={classes.item} key={item.id}>
+              <div className={classes.item} key={index}>
                 <div className={classes.circle}>{index + 1}</div>
                 <p>{item.title}</p>
                 {/* <span>({item.country})</span> */}
