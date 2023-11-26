@@ -6,7 +6,7 @@ const ButtonRegister: React.FC = (small) => {
   return (
     <div className={classes.button_show_register}>
       <NavLink to="register" className={classes.button}>
-        <p>Register Now</p>
+        <p>Jetzt Anmelden</p>
       </NavLink>
     </div>
   );

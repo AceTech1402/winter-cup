@@ -107,7 +107,7 @@ const Navbar: React.FC = () => {
                 <div className={classes.image}>
                   <CupIcon selected={actvieClass} />
                 </div>
-                <p>Result/Schedule</p>
+                <p>Spielplan</p>
               </NavLink>
             </li>
             <li>

@@ -13,7 +13,7 @@ export const sectionOneItems = [
   {
     id: 1,
     image: reward1,
-    title: "Time & Location",
+    title: "Zeit und Ort",
     number: '8.',
     text: 'Dez',
     location: 'Westside Soccer Arena',
